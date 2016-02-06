@@ -37,8 +37,8 @@
 
 
 #pragma mark - JSON Convert
-+(NSString*)dictToString:(id)obj;
-+(NSString*)jsonToString:(id)obj;
++ (NSString*)dictToString:(id)obj;
++ (NSString*)jsonToString:(id)obj;
 + (NSDictionary*)stringToDict:(NSString*)string;
 + (NSArray*)stringToArray:(NSString*)string;
 + (id)stringToObject:(NSString*)string;

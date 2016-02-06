@@ -37,10 +37,10 @@
 
 #pragma mark - JSON Convert
 
-+(NSString*)dictToString:(id)obj{
++ (NSString*)dictToString:(id)obj{
     return [self jsonToString:obj];
 }
-+(NSString*)jsonToString:(id)obj{
++ (NSString*)jsonToString:(id)obj{
     // NSJSONWritingOptions
     @try {
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:obj
