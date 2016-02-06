@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F06446D61C66570D00870CF1 /* HurryPorter_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F06446D51C66570D00870CF1 /* HurryPorter_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F06446DD1C66570D00870CF1 /* HurryPorter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06446D21C66570D00870CF1 /* HurryPorter_iOS.framework */; };
+		F06446E21C66570D00870CF1 /* HurryPorter_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F06446E11C66570D00870CF1 /* HurryPorter_iOSTests.m */; };
+		F06446EE1C66576000870CF1 /* HurryPorter.h in Headers */ = {isa = PBXBuildFile; fileRef = F06446EC1C66576000870CF1 /* HurryPorter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F06446EF1C66576000870CF1 /* HurryPorter.m in Sources */ = {isa = PBXBuildFile; fileRef = F06446ED1C66576000870CF1 /* HurryPorter.m */; };
+		F06446F41C66582B00870CF1 /* HurryPorter_iOSTests_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06446F31C66582B00870CF1 /* HurryPorter_iOSTests_Swift.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F06446DE1C66570D00870CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F06446C91C66570D00870CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F06446D11C66570D00870CF1;
+			remoteInfo = HurryPorter_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F06446D21C66570D00870CF1 /* HurryPorter_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HurryPorter_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06446D51C66570D00870CF1 /* HurryPorter_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HurryPorter_iOS.h; sourceTree = "<group>"; };
+		F06446D71C66570D00870CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06446DC1C66570D00870CF1 /* HurryPorter_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HurryPorter_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06446E11C66570D00870CF1 /* HurryPorter_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HurryPorter_iOSTests.m; sourceTree = "<group>"; };
+		F06446E31C66570D00870CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06446EC1C66576000870CF1 /* HurryPorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HurryPorter.h; path = Class/HurryPorter.h; sourceTree = "<group>"; };
+		F06446ED1C66576000870CF1 /* HurryPorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HurryPorter.m; path = Class/HurryPorter.m; sourceTree = "<group>"; };
+		F06446F01C6657DB00870CF1 /* HurryPorter_iOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HurryPorter_iOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F06446F31C66582B00870CF1 /* HurryPorter_iOSTests_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HurryPorter_iOSTests_Swift.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F06446CE1C66570D00870CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06446D91C66570D00870CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06446DD1C66570D00870CF1 /* HurryPorter_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F06446C81C66570D00870CF1 = {
+			isa = PBXGroup;
+			children = (
+				F06446D41C66570D00870CF1 /* HurryPorter_iOS */,
+				F06446E01C66570D00870CF1 /* HurryPorter_iOSTests */,
+				F06446D31C66570D00870CF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F06446D31C66570D00870CF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F06446D21C66570D00870CF1 /* HurryPorter_iOS.framework */,
+				F06446DC1C66570D00870CF1 /* HurryPorter_iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F06446D41C66570D00870CF1 /* HurryPorter_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F06446F51C665A5000870CF1 /* Public */,
+				F06446D71C66570D00870CF1 /* Info.plist */,
+			);
+			path = HurryPorter_iOS;
+			sourceTree = "<group>";
+		};
+		F06446E01C66570D00870CF1 /* HurryPorter_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F06446E11C66570D00870CF1 /* HurryPorter_iOSTests.m */,
+				F06446F31C66582B00870CF1 /* HurryPorter_iOSTests_Swift.swift */,
+				F06446E31C66570D00870CF1 /* Info.plist */,
+				F06446F01C6657DB00870CF1 /* HurryPorter_iOSTests-Bridging-Header.h */,
+			);
+			path = HurryPorter_iOSTests;
+			sourceTree = "<group>";
+		};
+		F06446F51C665A5000870CF1 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				F06446D51C66570D00870CF1 /* HurryPorter_iOS.h */,
+				F06446EC1C66576000870CF1 /* HurryPorter.h */,
+				F06446ED1C66576000870CF1 /* HurryPorter.m */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F06446CF1C66570D00870CF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06446D61C66570D00870CF1 /* HurryPorter_iOS.h in Headers */,
+				F06446EE1C66576000870CF1 /* HurryPorter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F06446D11C66570D00870CF1 /* HurryPorter_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06446E61C66570D00870CF1 /* Build configuration list for PBXNativeTarget "HurryPorter_iOS" */;
+			buildPhases = (
+				F06446CD1C66570D00870CF1 /* Sources */,
+				F06446CE1C66570D00870CF1 /* Frameworks */,
+				F06446CF1C66570D00870CF1 /* Headers */,
+				F06446D01C66570D00870CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HurryPorter_iOS;
+			productName = HurryPorter_iOS;
+			productReference = F06446D21C66570D00870CF1 /* HurryPorter_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F06446DB1C66570D00870CF1 /* HurryPorter_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06446E91C66570D00870CF1 /* Build configuration list for PBXNativeTarget "HurryPorter_iOSTests" */;
+			buildPhases = (
+				F06446D81C66570D00870CF1 /* Sources */,
+				F06446D91C66570D00870CF1 /* Frameworks */,
+				F06446DA1C66570D00870CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F06446DF1C66570D00870CF1 /* PBXTargetDependency */,
+			);
+			name = HurryPorter_iOSTests;
+			productName = HurryPorter_iOSTests;
+			productReference = F06446DC1C66570D00870CF1 /* HurryPorter_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F06446C91C66570D00870CF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Seachaos;
+				TargetAttributes = {
+					F06446D11C66570D00870CF1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F06446DB1C66570D00870CF1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F06446CC1C66570D00870CF1 /* Build configuration list for PBXProject "HurryPorter_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F06446C81C66570D00870CF1;
+			productRefGroup = F06446D31C66570D00870CF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F06446D11C66570D00870CF1 /* HurryPorter_iOS */,
+				F06446DB1C66570D00870CF1 /* HurryPorter_iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F06446D01C66570D00870CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06446DA1C66570D00870CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F06446CD1C66570D00870CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06446EF1C66576000870CF1 /* HurryPorter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06446D81C66570D00870CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06446F41C66582B00870CF1 /* HurryPorter_iOSTests_Swift.swift in Sources */,
+				F06446E21C66570D00870CF1 /* HurryPorter_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F06446DF1C66570D00870CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F06446D11C66570D00870CF1 /* HurryPorter_iOS */;
+			targetProxy = F06446DE1C66570D00870CF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F06446E41C66570D00870CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F06446E51C66570D00870CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F06446E71C66570D00870CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HurryPorter_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seachaos.HurryPorter-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F06446E81C66570D00870CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HurryPorter_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seachaos.HurryPorter-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F06446EA1C66570D00870CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = HurryPorter_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seachaos.HurryPorter-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HurryPorter_iOSTests/HurryPorter_iOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F06446EB1C66570D00870CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = HurryPorter_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seachaos.HurryPorter-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HurryPorter_iOSTests/HurryPorter_iOSTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F06446CC1C66570D00870CF1 /* Build configuration list for PBXProject "HurryPorter_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06446E41C66570D00870CF1 /* Debug */,
+				F06446E51C66570D00870CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06446E61C66570D00870CF1 /* Build configuration list for PBXNativeTarget "HurryPorter_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06446E71C66570D00870CF1 /* Debug */,
+				F06446E81C66570D00870CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F06446E91C66570D00870CF1 /* Build configuration list for PBXNativeTarget "HurryPorter_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06446EA1C66570D00870CF1 /* Debug */,
+				F06446EB1C66570D00870CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F06446C91C66570D00870CF1 /* Project object */;
+}
