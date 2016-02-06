@@ -4,7 +4,8 @@ A simple and easy use networking library for Android / iOS , It's cross platform
 
 
 # JSON Convert
-HurryPorter use below method convert json(dict/array) to string, or reversion :
+HurryPorter use below method convert json(dict/array) to string, or reversion.
+Here is iOS Version :
 
 \+(NSString\*)dictToString:(id)obj;
 
