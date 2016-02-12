@@ -67,4 +67,12 @@
     exceptDict = @{@"BB":@"AA"};
     XCTAssertFalse([testDict isEqual:exceptDict]);
 }
+
+- (void)testMakeRequest{
+    HurryPorter *porter = [[HurryPorter alloc] init];
+    [porter makeRequest:^NSDictionary*(HurryPorter *porter){
+        return @{@"First Name":@"Hurry",
+                 @"Last Name":@"Porter"};
+    } url:@"http://www.myandroid.tw/test/post.php"];
+}
 @end

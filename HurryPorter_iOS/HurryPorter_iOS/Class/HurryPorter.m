@@ -30,10 +30,114 @@
  
  */
 
+#import <UIKit/UIKit.h>
 #import "HurryPorter.h"
+
+
+
+@interface HurryPorter()<NSURLConnectionDelegate>{
+}
+
+@property (nonatomic, retain) NSMutableData *responseData;
+
+@property (nonatomic, copy) void (^callback_onSuccess) HUP_PARAM_SUCCESS;
+@property (nonatomic, copy) void (^callback_onFailed) HUP_PARAM_FAILED;
+
+@end
 
 @implementation HurryPorter
 
+@synthesize requstMethod, timeout, encoding, responseString, osVersion;
+@synthesize callback_onFailed, callback_onSuccess;
+@synthesize responseData;
+
+- (id)init{
+    self = [super init];
+    encoding = NSUTF8StringEncoding;
+    timeout = 30;
+    osVersion = [[UIDevice currentDevice].systemVersion floatValue];
+    return self;
+}
+#pragma mark - HTTP Request
+
+- (void) _preparePost:(NSMutableURLRequest*)request postData:(NSDictionary*)postDict{
+    [request setHTTPMethod:HUP_METHOD_POST];
+    
+    // convert post string
+    NSMutableString *postString = [NSMutableString new];
+    for(NSString *key in postDict){
+        if([postString length]>0){
+            [postString appendString:@"&"];
+        }
+        NSString *value = postDict[key];
+        if(osVersion>=9){
+            value = [value stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
+        }else{
+            value = [value stringByAddingPercentEscapesUsingEncoding:encoding];
+        }
+        [postString appendString:[NSString stringWithFormat:@"%@=%@",
+                                 key, value]];
+    }
+    request.HTTPBody = [postString dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (void)makeRequest:(NSDictionary* (^)(HurryPorter *porter))prepare
+          onSuccess:(void (^)HUP_PARAM_SUCCESS)onSuccess
+           onFailed:(void (^)HUP_PARAM_FAILED)onFailed
+                url:(NSString*)url{
+    callback_onSuccess = onSuccess;
+    callback_onFailed = onFailed;
+    NSDictionary *data = prepare(self);
+    
+    NSURL *nsurl = [NSURL URLWithString:url];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:nsurl];;
+//    request.timeoutInterval = timeout;
+    
+    // check request method and prepare data
+    if(self.requstMethod==nil||[HUP_METHOD_POST isEqualToString:self.requstMethod]){
+        [self _preparePost:request postData:data];
+    }
+    
+    // Will for over then ios 9...
+//    if(osVersion>=9){
+//        NSURLSession *session = [NSURLSession sharedSession];
+//        NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request                                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *erro)
+//            {
+//                [self onReceiveDataFinish:data];
+//            }];
+//        [sessionDataTask resume];
+//    }else{
+        [[NSURLConnection alloc] initWithRequest:request delegate:self];
+//    }
+}
+
+- (void)onReceiveDataFinish:(NSData*)data{
+    responseString = [[NSString alloc] initWithData:data encoding:encoding];
+    callback_onSuccess(responseString, [HurryPorter stringToDict:responseString], self);
+}
+
+#pragma mark - NSURLConnectionDelegate
+
+// start
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
+    responseData = [[NSMutableData alloc] init];
+}
+
+// receive
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
+    [responseData appendData:data];
+}
+
+// finish
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
+    [self onReceiveDataFinish:responseData];
+}
+
+// failed
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
+    responseString = [[NSString alloc] initWithData:responseData encoding:encoding];
+    callback_onFailed(responseString, self);
+}
 
 #pragma mark - JSON Convert
 

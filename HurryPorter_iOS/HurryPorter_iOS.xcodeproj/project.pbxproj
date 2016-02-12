@@ -13,6 +13,9 @@
 		F06446EE1C66576000870CF1 /* HurryPorter.h in Headers */ = {isa = PBXBuildFile; fileRef = F06446EC1C66576000870CF1 /* HurryPorter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F06446EF1C66576000870CF1 /* HurryPorter.m in Sources */ = {isa = PBXBuildFile; fileRef = F06446ED1C66576000870CF1 /* HurryPorter.m */; };
 		F06446F41C66582B00870CF1 /* HurryPorter_iOSTests_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06446F31C66582B00870CF1 /* HurryPorter_iOSTests_Swift.swift */; };
+		F0C86B5D1C6E45CB00D8CE18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C86B5C1C6E45CB00D8CE18 /* UIKit.framework */; };
+		F0C86B5F1C6E45D100D8CE18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C86B5E1C6E45D100D8CE18 /* Foundation.framework */; };
+		F0C92A2A1C6E614C00F3D563 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C92A291C6E614C00F3D563 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		F06446ED1C66576000870CF1 /* HurryPorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HurryPorter.m; path = Class/HurryPorter.m; sourceTree = "<group>"; };
 		F06446F01C6657DB00870CF1 /* HurryPorter_iOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HurryPorter_iOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F06446F31C66582B00870CF1 /* HurryPorter_iOSTests_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HurryPorter_iOSTests_Swift.swift; sourceTree = "<group>"; };
+		F0C86B5C1C6E45CB00D8CE18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F0C86B5E1C6E45D100D8CE18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0C92A291C6E614C00F3D563 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C92A2A1C6E614C00F3D563 /* CFNetwork.framework in Frameworks */,
+				F0C86B5F1C6E45D100D8CE18 /* Foundation.framework in Frameworks */,
+				F0C86B5D1C6E45CB00D8CE18 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,9 @@
 		F06446C81C66570D00870CF1 = {
 			isa = PBXGroup;
 			children = (
+				F0C92A291C6E614C00F3D563 /* CFNetwork.framework */,
+				F0C86B5E1C6E45D100D8CE18 /* Foundation.framework */,
+				F0C86B5C1C6E45CB00D8CE18 /* UIKit.framework */,
 				F06446D41C66570D00870CF1 /* HurryPorter_iOS */,
 				F06446E01C66570D00870CF1 /* HurryPorter_iOSTests */,
 				F06446D31C66570D00870CF1 /* Products */,
@@ -335,6 +347,7 @@
 				INFOPLIST_FILE = HurryPorter_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seachaos.HurryPorter-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -351,6 +364,7 @@
 				INFOPLIST_FILE = HurryPorter_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seachaos.HurryPorter-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -401,6 +415,7 @@
 				F06446E81C66570D00870CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F06446E91C66570D00870CF1 /* Build configuration list for PBXNativeTarget "HurryPorter_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +424,7 @@
 				F06446EB1C66570D00870CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

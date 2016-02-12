@@ -32,9 +32,22 @@
 
 #import <Foundation/Foundation.h>
 
+#define HUP_METHOD_POST @"POST"
+#define HUP_PARAM_SUCCESS (NSString *raw, NSDictionary* dict, HurryPorter *porter)
+#define HUP_PARAM_FAILED (NSString *raw, HurryPorter *porter)
+
 @interface HurryPorter : NSObject
 
+@property (nonatomic, retain) NSString *requstMethod;
+@property (nonatomic, retain) NSString *responseString;
+@property (nonatomic, assign) NSInteger timeout;
+@property (nonatomic, assign) float osVersion;
+@property (nonatomic, assign) NSStringEncoding encoding;
 
+- (void)makeRequest:(NSDictionary* (^)(HurryPorter *porter))prepare
+          onSuccess:(void (^)HUP_PARAM_SUCCESS)onSuccess
+           onFailed:(void (^)HUP_PARAM_FAILED)onFailed
+                url:(NSString*)url;
 
 #pragma mark - JSON Convert
 + (NSString*)dictToString:(id)obj;
