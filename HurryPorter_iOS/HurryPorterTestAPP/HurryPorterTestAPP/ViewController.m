@@ -54,7 +54,7 @@
             NSLog(@"failed resp:%@", raw);
             [task failed];
         } url:@"http://www.myandroid.tw/test/post.php"];
-        return WAIT_FOR_RESULT;
+        return SUCCESS;
     }];
 }
 

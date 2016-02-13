@@ -144,8 +144,12 @@
     if(task==nil){
         return NO;
     }
-    [self log:[NSString stringWithFormat:@"Failed:%@", task.name]];
-    [self log:[NSString stringWithFormat:@" > Because:%@", reason]];
+    [self logFailed:[NSString stringWithFormat:@"Failed:%@", task.name]];
+    if(reason==nil){
+        [self logFailed:@" > No Reason"];
+    }else{
+        [self logFailed:[NSString stringWithFormat:@" > Because:%@", reason]];
+    }
     return YES;
 }
 
