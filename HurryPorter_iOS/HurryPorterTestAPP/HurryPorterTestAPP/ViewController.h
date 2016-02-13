@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UISnape.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UISnapeDelegate>
 
 
 @end

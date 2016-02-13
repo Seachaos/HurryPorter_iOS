@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "UISnape.h"
 
 @interface HurryPorterTestAPPTests : XCTestCase
 
@@ -34,6 +35,31 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+
+#pragma mark - Test Snape
+
+- (void)testSnapeNilTaskId{
+    UISnape *snape = [UISnape new];
+    [self measureBlock:^{
+        XCTAssertFalse([snape success:nil]);
+        XCTAssertFalse([snape success:@"not exists"]);
+        XCTAssertFalse([snape failed:nil]);
+        XCTAssertFalse([snape failed:@"not exists"]);
+    }];
+    
+    XCTAssertEqual(SUCCESS, [snape test:@"TEST_Success" code:^UISnapeTestResult(UISnape *snape, SnapeTaskObject *task, NSString *jobId){
+        return SUCCESS;
+    }]);
+    XCTAssertEqual(FAILED, [snape test:@"B" code:^UISnapeTestResult(UISnape *snape, SnapeTaskObject *task, NSString *jobId){
+        return FAILED;
+    }]);
+    XCTAssertNotEqual(SUCCESS, [snape test:@"C" code:^UISnapeTestResult(UISnape *snape, SnapeTaskObject *task, NSString *jobId){
+        return FAILED;
+    }]);
+    
+    
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F056DF9F1C6FC3650038378D /* snape_debug_page.html in Resources */ = {isa = PBXBuildFile; fileRef = F056DF9E1C6FC3650038378D /* snape_debug_page.html */; };
 		F0C86B1A1C6E440300D8CE18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C86B191C6E440300D8CE18 /* main.m */; };
 		F0C86B1D1C6E440300D8CE18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C86B1C1C6E440300D8CE18 /* AppDelegate.m */; };
 		F0C86B201C6E440300D8CE18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C86B1F1C6E440300D8CE18 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 		F0C86B411C6E440300D8CE18 /* HurryPorterTestAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C86B401C6E440300D8CE18 /* HurryPorterTestAPPUITests.m */; };
 		F0C92A181C6E5A0A00F3D563 /* HurryPorter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C92A161C6E58F000F3D563 /* HurryPorter_iOS.framework */; };
 		F0C92A191C6E5A0A00F3D563 /* HurryPorter_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0C92A161C6E58F000F3D563 /* HurryPorter_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0C92A2C1C6F1F9C00F3D563 /* UISnape.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C92A2B1C6F1F9C00F3D563 /* UISnape.m */; };
+		F0C92A301C6F91E300F3D563 /* SnapeTaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C92A2F1C6F91E300F3D563 /* SnapeTaskObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F056DF9E1C6FC3650038378D /* snape_debug_page.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = snape_debug_page.html; path = Snape/snape_debug_page.html; sourceTree = "<group>"; };
 		F0C86B151C6E440300D8CE18 /* HurryPorterTestAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HurryPorterTestAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C86B191C6E440300D8CE18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0C86B1B1C6E440300D8CE18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +96,10 @@
 		F0C86B421C6E440300D8CE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0C92A161C6E58F000F3D563 /* HurryPorter_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HurryPorter_iOS.framework; path = "../../../../../../Developer/Xcode/DerivedData/HurryPorter-ffwrcfokcmxnggecbnqloiqhsdsn/Build/Products/Debug-iphoneos/HurryPorter_iOS.framework"; sourceTree = "<group>"; };
 		F0C92A1B1C6E5B4600F3D563 /* HurryPorter_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HurryPorter_iOS.xcodeproj; path = ../HurryPorter_iOS.xcodeproj; sourceTree = "<group>"; };
+		F0C92A2B1C6F1F9C00F3D563 /* UISnape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISnape.m; path = Snape/UISnape.m; sourceTree = "<group>"; };
+		F0C92A2E1C6F1FD500F3D563 /* UISnape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UISnape.h; path = Snape/UISnape.h; sourceTree = "<group>"; };
+		F0C92A2F1C6F91E300F3D563 /* SnapeTaskObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapeTaskObject.m; path = Snape/SnapeTaskObject.m; sourceTree = "<group>"; };
+		F0C92A311C6F91F900F3D563 /* SnapeTaskObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SnapeTaskObject.h; path = Snape/SnapeTaskObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +156,7 @@
 				F0C86B1C1C6E440300D8CE18 /* AppDelegate.m */,
 				F0C86B1E1C6E440300D8CE18 /* ViewController.h */,
 				F0C86B1F1C6E440300D8CE18 /* ViewController.m */,
+				F0C92A2D1C6F1FBD00F3D563 /* UISnape */,
 				F0C86B211C6E440300D8CE18 /* Main.storyboard */,
 				F0C86B271C6E440300D8CE18 /* Assets.xcassets */,
 				F0C86B291C6E440300D8CE18 /* LaunchScreen.storyboard */,
@@ -200,6 +209,18 @@
 				F0C92A161C6E58F000F3D563 /* HurryPorter_iOS.framework */,
 			);
 			name = HurryPorterFramework;
+			sourceTree = "<group>";
+		};
+		F0C92A2D1C6F1FBD00F3D563 /* UISnape */ = {
+			isa = PBXGroup;
+			children = (
+				F056DF9E1C6FC3650038378D /* snape_debug_page.html */,
+				F0C92A2E1C6F1FD500F3D563 /* UISnape.h */,
+				F0C92A2B1C6F1F9C00F3D563 /* UISnape.m */,
+				F0C92A311C6F91F900F3D563 /* SnapeTaskObject.h */,
+				F0C92A2F1C6F91E300F3D563 /* SnapeTaskObject.m */,
+			);
+			name = UISnape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C86B2B1C6E440300D8CE18 /* LaunchScreen.storyboard in Resources */,
+				F056DF9F1C6FC3650038378D /* snape_debug_page.html in Resources */,
 				F0C86B281C6E440300D8CE18 /* Assets.xcassets in Resources */,
 				F0C86B231C6E440300D8CE18 /* Main.storyboard in Resources */,
 			);
@@ -359,8 +381,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C86B201C6E440300D8CE18 /* ViewController.m in Sources */,
+				F0C92A301C6F91E300F3D563 /* SnapeTaskObject.m in Sources */,
 				F0C86B1D1C6E440300D8CE18 /* AppDelegate.m in Sources */,
 				F0C86B261C6E440300D8CE18 /* HurryPorterTestAPP.xcdatamodeld in Sources */,
+				F0C92A2C1C6F1F9C00F3D563 /* UISnape.m in Sources */,
 				F0C86B1A1C6E440300D8CE18 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

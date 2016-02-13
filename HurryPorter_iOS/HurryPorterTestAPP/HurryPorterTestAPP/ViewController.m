@@ -14,17 +14,21 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    UISnape *snape;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    snape = [UISnape new];
+    [self.view addSubview:snape];
+    snape.frame = self.view.frame;
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    [self testPost];
+    snape.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,19 +38,24 @@
 
 #pragma mark - test method
 
-- (void)testPost{
+- (void)snapeReadyForTest:(UISnape *)_snape{
+    [snape log:@"SNAPE READY FOR TEST"];
     
-    HurryPorter *porter = [[HurryPorter alloc] init];
-    [porter makeRequest:^NSDictionary*(HurryPorter *porter){
-        return @{@"First Name":@"Hurry",
-                 @"Last Name":@"Porter"};
-    } onSuccess:^void HUP_PARAM_SUCCESS{
-        NSLog(@"success resp:%@", raw);
-        NSLog(@"json is:%@", dict);
-    } onFailed:^void HUP_PARAM_FAILED{
-        NSLog(@"failed resp:%@", raw);
-    } url:@"http://www.myandroid.tw/test/post.php"];
-
+    [snape test:@"Post Test" code:^UISnapeTestResult(UISnape *s, SnapeTaskObject *task, NSString *jobId){
+        HurryPorter *porter = [[HurryPorter alloc] init];
+        [porter makeRequest:^NSDictionary*(HurryPorter *porter){
+            return @{@"First Name":@"Hurry",
+                     @"Last Name":@"Porter"};
+        } onSuccess:^void HUP_PARAM_SUCCESS{
+            NSLog(@"success resp:%@", raw);
+            NSLog(@"json is:%@", dict);
+            [task success];
+        } onFailed:^void HUP_PARAM_FAILED{
+            NSLog(@"failed resp:%@", raw);
+            [task failed];
+        } url:@"http://www.myandroid.tw/test/post.php"];
+        return WAIT_FOR_RESULT;
+    }];
 }
 
 @end
