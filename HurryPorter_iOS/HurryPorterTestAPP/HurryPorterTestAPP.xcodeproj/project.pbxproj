@@ -17,8 +17,6 @@
 		F0C86B2B1C6E440300D8CE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C86B291C6E440300D8CE18 /* LaunchScreen.storyboard */; };
 		F0C86B361C6E440300D8CE18 /* HurryPorterTestAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C86B351C6E440300D8CE18 /* HurryPorterTestAPPTests.m */; };
 		F0C86B411C6E440300D8CE18 /* HurryPorterTestAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C86B401C6E440300D8CE18 /* HurryPorterTestAPPUITests.m */; };
-		F0C92A181C6E5A0A00F3D563 /* HurryPorter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C92A161C6E58F000F3D563 /* HurryPorter_iOS.framework */; };
-		F0C92A191C6E5A0A00F3D563 /* HurryPorter_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0C92A161C6E58F000F3D563 /* HurryPorter_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F0C92A2C1C6F1F9C00F3D563 /* UISnape.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C92A2B1C6F1F9C00F3D563 /* UISnape.m */; };
 		F0C92A301C6F91E300F3D563 /* SnapeTaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C92A2F1C6F91E300F3D563 /* SnapeTaskObject.m */; };
 /* End PBXBuildFile section */
@@ -38,42 +36,7 @@
 			remoteGlobalIDString = F0C86B141C6E440300D8CE18;
 			remoteInfo = HurryPorterTestAPP;
 		};
-		F0C92A201C6E5B4600F3D563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F0C92A1B1C6E5B4600F3D563 /* HurryPorter_iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F06446D21C66570D00870CF1;
-			remoteInfo = HurryPorter_iOS;
-		};
-		F0C92A221C6E5B4600F3D563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F0C92A1B1C6E5B4600F3D563 /* HurryPorter_iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F06446DC1C66570D00870CF1;
-			remoteInfo = HurryPorter_iOSTests;
-		};
-		F0C92A271C6E60D300F3D563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F0C92A1B1C6E5B4600F3D563 /* HurryPorter_iOS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F06446D11C66570D00870CF1;
-			remoteInfo = HurryPorter_iOS;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F0C92A1A1C6E5A0A00F3D563 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F0C92A191C6E5A0A00F3D563 /* HurryPorter_iOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F056DF9E1C6FC3650038378D /* snape_debug_page.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = snape_debug_page.html; path = Snape/snape_debug_page.html; sourceTree = "<group>"; };
@@ -94,8 +57,6 @@
 		F0C86B3C1C6E440300D8CE18 /* HurryPorterTestAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HurryPorterTestAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C86B401C6E440300D8CE18 /* HurryPorterTestAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HurryPorterTestAPPUITests.m; sourceTree = "<group>"; };
 		F0C86B421C6E440300D8CE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0C92A161C6E58F000F3D563 /* HurryPorter_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HurryPorter_iOS.framework; path = "../../../../../../Developer/Xcode/DerivedData/HurryPorter-ffwrcfokcmxnggecbnqloiqhsdsn/Build/Products/Debug-iphoneos/HurryPorter_iOS.framework"; sourceTree = "<group>"; };
-		F0C92A1B1C6E5B4600F3D563 /* HurryPorter_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HurryPorter_iOS.xcodeproj; path = ../HurryPorter_iOS.xcodeproj; sourceTree = "<group>"; };
 		F0C92A2B1C6F1F9C00F3D563 /* UISnape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISnape.m; path = Snape/UISnape.m; sourceTree = "<group>"; };
 		F0C92A2E1C6F1FD500F3D563 /* UISnape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UISnape.h; path = Snape/UISnape.h; sourceTree = "<group>"; };
 		F0C92A2F1C6F91E300F3D563 /* SnapeTaskObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapeTaskObject.m; path = Snape/SnapeTaskObject.m; sourceTree = "<group>"; };
@@ -107,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0C92A181C6E5A0A00F3D563 /* HurryPorter_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +91,6 @@
 		F0C86B0C1C6E440300D8CE18 = {
 			isa = PBXGroup;
 			children = (
-				F0C92A261C6E5C4700F3D563 /* HurryPorterFramework */,
 				F0C86B171C6E440300D8CE18 /* HurryPorterTestAPP */,
 				F0C86B341C6E440300D8CE18 /* HurryPorterTestAPPTests */,
 				F0C86B3F1C6E440300D8CE18 /* HurryPorterTestAPPUITests */,
@@ -193,24 +152,6 @@
 			path = HurryPorterTestAPPUITests;
 			sourceTree = "<group>";
 		};
-		F0C92A1C1C6E5B4600F3D563 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F0C92A211C6E5B4600F3D563 /* HurryPorter_iOS.framework */,
-				F0C92A231C6E5B4600F3D563 /* HurryPorter_iOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F0C92A261C6E5C4700F3D563 /* HurryPorterFramework */ = {
-			isa = PBXGroup;
-			children = (
-				F0C92A1B1C6E5B4600F3D563 /* HurryPorter_iOS.xcodeproj */,
-				F0C92A161C6E58F000F3D563 /* HurryPorter_iOS.framework */,
-			);
-			name = HurryPorterFramework;
-			sourceTree = "<group>";
-		};
 		F0C92A2D1C6F1FBD00F3D563 /* UISnape */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,12 +174,10 @@
 				F0C86B111C6E440300D8CE18 /* Sources */,
 				F0C86B121C6E440300D8CE18 /* Frameworks */,
 				F0C86B131C6E440300D8CE18 /* Resources */,
-				F0C92A1A1C6E5A0A00F3D563 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F0C92A281C6E60D300F3D563 /* PBXTargetDependency */,
 			);
 			name = HurryPorterTestAPP;
 			productName = HurryPorterTestAPP;
@@ -315,12 +254,6 @@
 			mainGroup = F0C86B0C1C6E440300D8CE18;
 			productRefGroup = F0C86B161C6E440300D8CE18 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F0C92A1C1C6E5B4600F3D563 /* Products */;
-					ProjectRef = F0C92A1B1C6E5B4600F3D563 /* HurryPorter_iOS.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F0C86B141C6E440300D8CE18 /* HurryPorterTestAPP */,
@@ -329,23 +262,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		F0C92A211C6E5B4600F3D563 /* HurryPorter_iOS.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = HurryPorter_iOS.framework;
-			remoteRef = F0C92A201C6E5B4600F3D563 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F0C92A231C6E5B4600F3D563 /* HurryPorter_iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = HurryPorter_iOSTests.xctest;
-			remoteRef = F0C92A221C6E5B4600F3D563 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F0C86B131C6E440300D8CE18 /* Resources */ = {
@@ -417,11 +333,6 @@
 			isa = PBXTargetDependency;
 			target = F0C86B141C6E440300D8CE18 /* HurryPorterTestAPP */;
 			targetProxy = F0C86B3D1C6E440300D8CE18 /* PBXContainerItemProxy */;
-		};
-		F0C92A281C6E60D300F3D563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HurryPorter_iOS;
-			targetProxy = F0C92A271C6E60D300F3D563 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

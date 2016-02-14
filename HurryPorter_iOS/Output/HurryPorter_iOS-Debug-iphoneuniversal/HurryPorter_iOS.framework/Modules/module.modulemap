@@ -1,0 +1,6 @@
+framework module HurryPorter_iOS {
+  umbrella header "HurryPorter_iOS.h"
+
+  export *
+  module * { export * }
+}
