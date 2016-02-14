@@ -66,6 +66,8 @@
     XCTAssertTrue([testDict isEqual:exceptDict]);
     exceptDict = @{@"BB":@"AA"};
     XCTAssertFalse([testDict isEqual:exceptDict]);
+    exceptDict = @{@"AA":@"BBc"};
+    XCTAssertTrue([testDict isEqual:exceptDict]);
 }
 
 - (void)testMakeRequest{
