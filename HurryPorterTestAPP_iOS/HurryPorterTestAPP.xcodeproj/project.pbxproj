@@ -21,6 +21,7 @@
 		F0C92A301C6F91E300F3D563 /* SnapeTaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C92A2F1C6F91E300F3D563 /* SnapeTaskObject.m */; };
 		F0E553711C7093BE007E028F /* HurryPorter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E553701C7093BE007E028F /* HurryPorter_iOS.framework */; };
 		F0E553731C7093C5007E028F /* HurryPorter_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0E553701C7093BE007E028F /* HurryPorter_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0E553751C709669007E028F /* HurryPorter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E553701C7093BE007E028F /* HurryPorter_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E553751C709669007E028F /* HurryPorter_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +502,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HurryPorterTestAPPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seachaos.HurryPorterTestAPPTests;
@@ -512,6 +518,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HurryPorterTestAPPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seachaos.HurryPorterTestAPPTests;
