@@ -56,6 +56,8 @@ typedef enum _UISnapeTestResult{
 - (id)initWithDelegate:(id<UISnapeDelegate>)delegate;
 
 - (UISnapeTestResult)test:(NSString*)name code:(UISnapeTestResult(^)(UISnape *snape, SnapeTaskObject *task, NSString *taskId))testBlock;
+- (UISnapeTestResult)waitForResult;
+
 - (void)log:(NSString*)msg;
 - (void)logSuccess:(NSString*)msg;
 - (void)logFailed:(NSString*)msg;

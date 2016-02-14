@@ -43,13 +43,13 @@
     NSMutableDictionary *taskPool;
     NSMutableArray *tasks;
     BOOL webViewLoaded;
+    UISnapeTestResult testResult;
 }
 
 @synthesize webView, delegate;
 
 - (id)init{
     self = [super init];
-    webViewLoaded = NO;
     [self prepareData];
     return self;
 }
@@ -65,16 +65,6 @@
     if(webViewLoaded){
         [delegate snapeReadyForTest:self];
     }
-}
-
-- (void)prepareData{
-    if(taskPool==nil){
-        taskPool = [NSMutableDictionary new];
-        tasks = [NSMutableArray new];
-    }
-    
-    // prepare webview for debug
-    [self prepareWebView];
 }
 
 - (void) setFrame:(CGRect)frame{
@@ -109,25 +99,33 @@
     task.snape = self;
     
     // do test
-    UISnapeTestResult result = testBlock(self, task, task.taskId);
-    
+    testResult = testBlock(self, task, task.taskId);
     
     // check result or wait?
-    switch (result) {
+    switch (testResult) {
         case SUCCESS:
             [self success:task.taskId];
-            return SUCCESS;
+            break;
         case FAILED:
             [self failed:task.taskId];
-            return FAILED;
+            break;
         default:
-            return result;
+            break;
     }
+    return testResult;
+}
+
+- (UISnapeTestResult)waitForResult{
+    while (testResult==WAIT_FOR_RESULT) {
+        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+    }
+    return testResult;
 }
 
 #pragma - for test result call
 
 - (BOOL)success:(NSString*)taskId{
+    testResult = SUCCESS;
     SnapeTaskObject *task = [self getTaskByTaskId:taskId];
     if(task==nil){
         return NO;
@@ -137,6 +135,7 @@
 }
 
 - (BOOL)failed:(NSString*)taskId because:(NSString*)reason{
+    testResult = FAILED;
     if(taskId==nil){
         return NO;
     }
@@ -170,7 +169,34 @@
     }
     return YES;
 }
+
+#pragma mark - Prepare(Init)
+
+- (void)prepareData{
+    webViewLoaded = NO;
+    
+    if(taskPool==nil){
+        taskPool = [NSMutableDictionary new];
+        tasks = [NSMutableArray new];
+    }
+    
+    // prepare webview for debug
+    [self prepareWebView];
+}
+
+- (void)prepareWebView{
+    webView = [UIWebView new];
+    [webView setDelegate:self];
+    NSData *htmlData = [self loadDataFromResource:@"snape_debug_page" type:@"html"];
+    if(htmlData==nil){
+        htmlData = [@"HTML not found!" dataUsingEncoding:NSUTF8StringEncoding];
+    }
+    [webView loadData:htmlData MIMEType: @"text/html" textEncodingName: @"UTF-8" baseURL:[NSURL URLWithString:@""]];
+    [self addSubview:webView];
+}
+
 #pragma - private method
+
 
 - (void)logToHtml:(NSString*)method msg:(NSString*)msg{
     NSString *value = [self htmlEncode:msg];
@@ -187,16 +213,7 @@
     }
     return value;
 }
-- (void)prepareWebView{
-    webView = [UIWebView new];
-    [webView setDelegate:self];
-    NSData *htmlData = [self loadDataFromResource:@"snape_debug_page" type:@"html"];
-    if(htmlData==nil){
-        htmlData = [@"HTML not found!" dataUsingEncoding:NSUTF8StringEncoding];
-    }
-    [webView loadData:htmlData MIMEType: @"text/html" textEncodingName: @"UTF-8" baseURL:[NSURL URLWithString:@""]];
-    [self addSubview:webView];
-}
+
 
 - (NSData*)loadDataFromResource:(NSString*)name type:(NSString*)type{
     NSString *htmlPath = [[NSBundle mainBundle] pathForResource:name ofType:type];

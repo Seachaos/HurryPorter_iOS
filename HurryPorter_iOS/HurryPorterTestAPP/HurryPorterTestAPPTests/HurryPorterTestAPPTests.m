@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <HurryPorter_iOS/HurryPorter_iOS.h>
 #import "UISnape.h"
 
 @interface HurryPorterTestAPPTests : XCTestCase
@@ -40,6 +41,28 @@
 
 #pragma mark - Test Snape
 
+- (void)testSnapeNetworkTest{
+    UISnape *snape = [UISnape new];
+    [snape test:@"Post Test" code:^UISnapeTestResult(UISnape *s, SnapeTaskObject *task, NSString *jobId){
+        HurryPorter *porter = [[HurryPorter alloc] init];
+        [porter makeRequest:^NSDictionary*(HurryPorter *porter){
+            return @{@"First Name":@"Hurry",
+                     @"Last Name":@"Porter"};
+        } onSuccess:^void HUP_PARAM_SUCCESS{
+            NSLog(@"success resp:%@", raw);
+            NSLog(@"json is:%@", dict);
+            [task success];
+        } onFailed:^void HUP_PARAM_FAILED{
+            NSLog(@"failed resp:%@", raw);
+            [task failed];
+        } url:@"http://www.myandroid.tw/test/post.php"];
+        return WAIT_FOR_RESULT;
+    }];
+    [self measureBlock:^{
+        UISnapeTestResult result = [snape waitForResult];
+        XCTAssertEqual(result, SUCCESS);
+    }];
+}
 - (void)testSnapeNilTaskId{
     UISnape *snape = [UISnape new];
     [self measureBlock:^{
