@@ -1,4 +1,7 @@
 language: objective-c
+osx_image: xcode7.1
+
+
 script: 
   - cd HurryPorter_iOS
   - xctool -sdk iphonesimulator -project HurryPorter_iOS.xcodeproj -scheme HurryPorter_iOS build test
