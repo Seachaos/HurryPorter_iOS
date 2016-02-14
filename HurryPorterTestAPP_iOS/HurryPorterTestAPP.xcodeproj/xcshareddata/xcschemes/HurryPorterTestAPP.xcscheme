@@ -20,6 +20,20 @@
                ReferencedContainer = "container:HurryPorterTestAPP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F0C86B3B1C6E440300D8CE18"
+               BuildableName = "HurryPorterTestAPPUITests.xctest"
+               BlueprintName = "HurryPorterTestAPPUITests"
+               ReferencedContainer = "container:HurryPorterTestAPP.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -35,16 +49,6 @@
                BlueprintIdentifier = "F0C86B301C6E440300D8CE18"
                BuildableName = "HurryPorterTestAPPTests.xctest"
                BlueprintName = "HurryPorterTestAPPTests"
-               ReferencedContainer = "container:HurryPorterTestAPP.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F0C86B3B1C6E440300D8CE18"
-               BuildableName = "HurryPorterTestAPPUITests.xctest"
-               BlueprintName = "HurryPorterTestAPPUITests"
                ReferencedContainer = "container:HurryPorterTestAPP.xcodeproj">
             </BuildableReference>
          </TestableReference>
