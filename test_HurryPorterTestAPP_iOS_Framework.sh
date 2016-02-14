@@ -1,6 +1,4 @@
 #!/bin/bash
 set -ev
 
-cd HurryPorter_iOS/HurryPorterTestAPP
-xctool clean -sdk iphonesimulator -project HurryPorterTestAPP.xcodeproj -scheme HurryPorterTestAPP build test
-cd ../../
+# xctool clean -sdk iphonesimulator -workspace HurryPorter.xcworkspace -scheme HurryPorterTestAPP build test
