@@ -1,7 +1,8 @@
 # HurryPorter
+
+Travis-Ci:  [![Build Status](https://travis-ci.org/Seachaos/HurryPorter.svg?branch=master)](https://travis-ci.org/Seachaos/HurryPorter)
+
 A simple and easy use networking library for Android / iOS , It's cross platform :D
-
-
 
 # JSON Convert
 
