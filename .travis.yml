@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: HurryPorter_iOS/HurryPorter_iOS.xcodeproj
+xcode_scheme: HurryPorter_iOSTests
