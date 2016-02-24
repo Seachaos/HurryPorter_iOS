@@ -1,0 +1,6 @@
+framework module HurryPorter {
+  umbrella header "HurryPorter-umbrella.h"
+
+  export *
+  module * { export * }
+}

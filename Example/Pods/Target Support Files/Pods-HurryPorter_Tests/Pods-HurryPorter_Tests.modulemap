@@ -1,0 +1,6 @@
+framework module Pods_HurryPorter_Tests {
+  umbrella header "Pods-HurryPorter_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

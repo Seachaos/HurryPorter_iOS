@@ -1,20 +1,29 @@
 # HurryPorter
 
-Travis-Ci:  [![Build Status](https://travis-ci.org/Seachaos/HurryPorter.svg?branch=master)](https://travis-ci.org/Seachaos/HurryPorter)
+[![CI Status](http://img.shields.io/travis/Seachaos/HurryPorter.svg?style=flat)](https://travis-ci.org/Seachaos/HurryPorter)
+[![Version](https://img.shields.io/cocoapods/v/HurryPorter.svg?style=flat)](http://cocoapods.org/pods/HurryPorter)
+[![License](https://img.shields.io/cocoapods/l/HurryPorter.svg?style=flat)](http://cocoapods.org/pods/HurryPorter)
+[![Platform](https://img.shields.io/cocoapods/p/HurryPorter.svg?style=flat)](http://cocoapods.org/pods/HurryPorter)
 
-A simple and easy use networking library for Android / iOS , It's cross platform :D
+## Usage
 
-# JSON Convert
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-HurryPorter use below method convert json(dict/array) to string, or reversion.
-Here is iOS Version :
+## Requirements
 
-\+(NSString\*)dictToString:(id)obj;
+## Installation
 
-\+(NSString\*)jsonToString:(id)obj;
+HurryPorter is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-\+(NSDictionary\*)stringToDict:(NSString\*)string;
+```ruby
+pod "HurryPorter"
+```
 
-\+(NSArray\*)stringToArray:(NSString\*)string;
+## Author
 
-\+(id)stringToObject:(NSString\*)string;
+Seachaos, ye.jian.yin@gmail.com
+
+## License
+
+HurryPorter is available under the MIT license. See the LICENSE file for more info.
