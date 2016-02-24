@@ -1,6 +1,6 @@
 # HurryPorter
 
-[![CI Status](http://img.shields.io/travis/Seachaos/HurryPorter.svg?style=flat)](https://travis-ci.org/Seachaos/HurryPorter)
+[![CI Status](http://img.shields.io/travis/Seachaos/HurryPorter_iOS.svg?style=flat)](https://travis-ci.org/Seachaos/HurryPorter_iOS)
 [![Version](https://img.shields.io/cocoapods/v/HurryPorter.svg?style=flat)](http://cocoapods.org/pods/HurryPorter)
 [![License](https://img.shields.io/cocoapods/l/HurryPorter.svg?style=flat)](http://cocoapods.org/pods/HurryPorter)
 [![Platform](https://img.shields.io/cocoapods/p/HurryPorter.svg?style=flat)](http://cocoapods.org/pods/HurryPorter)
