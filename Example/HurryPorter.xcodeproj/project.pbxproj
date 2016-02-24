@@ -14,6 +14,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		E90D1AAC28E3953F57C0CAA7 /* Pods_HurryPorter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D670F79E0EC1CD9E94EF44 /* Pods_HurryPorter_Example.framework */; };
+		F04D57081C7E0F3900665E95 /* NSObject_UsingInOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = F04D57071C7E0F3900665E95 /* NSObject_UsingInOBJC.m */; };
+		F04D57101C7E18DF00665E95 /* TestInOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = F04D570F1C7E18DF00665E95 /* TestInOBJC.m */; };
 		F9A3783801F6BE5266C74340 /* Pods_HurryPorter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2275FFC1745ABF1B63FB35D8 /* Pods_HurryPorter_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,11 @@
 		B8F2BB0F76C3C6352296F94F /* Pods-HurryPorter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HurryPorter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HurryPorter_Tests/Pods-HurryPorter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6D670F79E0EC1CD9E94EF44 /* Pods_HurryPorter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HurryPorter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7214CC9B18F8A6BE1B4CEF /* HurryPorter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HurryPorter.podspec; path = ../HurryPorter.podspec; sourceTree = "<group>"; };
+		F04D57051C7E0EF700665E95 /* HurryPorter_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HurryPorter_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		F04D57061C7E0EF800665E95 /* NSObject_UsingInOBJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_UsingInOBJC.h; sourceTree = "<group>"; };
+		F04D57071C7E0F3900665E95 /* NSObject_UsingInOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_UsingInOBJC.m; sourceTree = "<group>"; };
+		F04D570E1C7E18DF00665E95 /* HurryPorter_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HurryPorter_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F04D570F1C7E18DF00665E95 /* TestInOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInOBJC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +111,13 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				F04D57061C7E0EF800665E95 /* NSObject_UsingInOBJC.h */,
+				F04D57071C7E0F3900665E95 /* NSObject_UsingInOBJC.m */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				F04D57051C7E0EF700665E95 /* HurryPorter_Example-Bridging-Header.h */,
 			);
 			name = "Example for HurryPorter";
 			path = HurryPorter;
@@ -124,8 +134,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				F04D570F1C7E18DF00665E95 /* TestInOBJC.m */,
+				F04D570E1C7E18DF00665E95 /* HurryPorter_Tests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -361,6 +373,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				F04D57081C7E0F3900665E95 /* NSObject_UsingInOBJC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04D57101C7E18DF00665E95 /* TestInOBJC.m in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,11 +503,14 @@
 			baseConfigurationReference = 28676447CF9DE1AFD9BC93C5 /* Pods-HurryPorter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HurryPorter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HurryPorter/HurryPorter_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -502,11 +519,13 @@
 			baseConfigurationReference = 9ACD312EBE45BCEE64634AE3 /* Pods-HurryPorter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HurryPorter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HurryPorter/HurryPorter_Example-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -515,6 +534,7 @@
 			baseConfigurationReference = B8F2BB0F76C3C6352296F94F /* Pods-HurryPorter_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,6 +547,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/HurryPorter_Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HurryPorter_Example.app/HurryPorter_Example";
 			};
 			name = Debug;
@@ -536,6 +558,7 @@
 			baseConfigurationReference = 3F5224C6AF897B3FA98EABC3 /* Pods-HurryPorter_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -544,6 +567,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/HurryPorter_Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HurryPorter_Example.app/HurryPorter_Example";
 			};
 			name = Release;

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "HurryPorter"
   s.version          = "0.1.0"
-  s.summary          = "A short description of HurryPorter."
+  s.summary          = "A simple and easy use networking library"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/HurryPorter"
+  s.homepage         = "https://github.com/Seachaos/HurryPorter_iOS"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Seachaos" => "ye.jian.yin@gmail.com" }

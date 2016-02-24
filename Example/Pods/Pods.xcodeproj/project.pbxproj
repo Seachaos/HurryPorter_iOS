@@ -31,7 +31,7 @@
 		512DFAE728521F02AF225F0082195DCC /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 784135A9193F0FE38182AF2C577B3A52 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53039556986BA46C4895AE80CA672B6D /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ABC5A3D02301EC1EC014B6ABEFA42A /* NSString+QCKSelectorName.m */; };
 		58EBA2C1A43283FB2188AB1FB592D32B /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9040AB08CA7AEB727960E284F746A4 /* DSL.swift */; };
-		5EA3F598228359A479623BAEC9499759 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A703E0AD46F37ABC3FD84C4D49D16C /* ReplaceMe.swift */; };
+		5EA3F598228359A479623BAEC9499759 /* HurryPorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A703E0AD46F37ABC3FD84C4D49D16C /* HurryPorter.swift */; };
 		6403BE3501F0E3FA4207CA08C555E052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		65AA25DC5BE6C7A577BE73117F40450E /* Pods-HurryPorter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BDD500D45D200BE8FEA7A14835B13E2 /* Pods-HurryPorter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67E906EA9F0306D47D6B270B9459ED8C /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 616BFD5BF73AEF373E5250D05560A338 /* Quick-dummy.m */; };
@@ -190,7 +190,7 @@
 		75A8F08988FD43499B53DDB4C8385C8A /* Pods_HurryPorter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HurryPorter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HurryPorter.xcconfig; sourceTree = "<group>"; };
 		784135A9193F0FE38182AF2C577B3A52 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
-		79A703E0AD46F37ABC3FD84C4D49D16C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		79A703E0AD46F37ABC3FD84C4D49D16C /* HurryPorter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HurryPorter.swift; sourceTree = "<group>"; };
 		7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
 		7CAC9A4824BB52A6A219EAD1E33E6D0E /* Pods-HurryPorter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HurryPorter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8487245080A1AB0FFD48288B814AEA82 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
@@ -480,7 +480,7 @@
 		ADB2E422DEE2916266CE75D68BBB561B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				79A703E0AD46F37ABC3FD84C4D49D16C /* ReplaceMe.swift */,
+				79A703E0AD46F37ABC3FD84C4D49D16C /* HurryPorter.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -773,7 +773,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				857261AC541C3AAF30E73B21CD97D68D /* HurryPorter-dummy.m in Sources */,
-				5EA3F598228359A479623BAEC9499759 /* ReplaceMe.swift in Sources */,
+				5EA3F598228359A479623BAEC9499759 /* HurryPorter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
