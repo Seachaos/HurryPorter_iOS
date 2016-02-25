@@ -16,6 +16,7 @@
 		E90D1AAC28E3953F57C0CAA7 /* Pods_HurryPorter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D670F79E0EC1CD9E94EF44 /* Pods_HurryPorter_Example.framework */; };
 		F04D57081C7E0F3900665E95 /* NSObject_UsingInOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = F04D57071C7E0F3900665E95 /* NSObject_UsingInOBJC.m */; };
 		F04D57101C7E18DF00665E95 /* TestInOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = F04D570F1C7E18DF00665E95 /* TestInOBJC.m */; };
+		F04D57121C7F79A700665E95 /* HurryPorter.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = F04D57111C7F79A700665E95 /* HurryPorter.podspec.json */; };
 		F9A3783801F6BE5266C74340 /* Pods_HurryPorter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2275FFC1745ABF1B63FB35D8 /* Pods_HurryPorter_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		F04D57071C7E0F3900665E95 /* NSObject_UsingInOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_UsingInOBJC.m; sourceTree = "<group>"; };
 		F04D570E1C7E18DF00665E95 /* HurryPorter_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HurryPorter_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F04D570F1C7E18DF00665E95 /* TestInOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInOBJC.m; sourceTree = "<group>"; };
+		F04D57111C7F79A700665E95 /* HurryPorter.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = HurryPorter.podspec.json; path = "Pods/Local Podspecs/HurryPorter.podspec.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				F04D57111C7F79A700665E95 /* HurryPorter.podspec.json */,
 				DF7214CC9B18F8A6BE1B4CEF /* HurryPorter.podspec */,
 				A9702ED5464F8AE0241432BC /* README.md */,
 				B1D62B4691C1802D985CA064 /* LICENSE */,
@@ -260,6 +263,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				F04D57121C7F79A700665E95 /* HurryPorter.podspec.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

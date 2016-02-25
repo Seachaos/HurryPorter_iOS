@@ -58,12 +58,12 @@ public class HurryPorterHelper : NSObject{
     }
     
     public class func urlEncode(value:String)->String{
-        if(osVersion>=9){
+//        if(osVersion>=9){
             return value.stringByAddingPercentEncodingWithAllowedCharacters(
                 NSCharacterSet.URLQueryAllowedCharacterSet()) ?? value
-        }else{
-            return value.stringByAddingPercentEscapesUsingEncoding(encoding) ?? value
-        }
+//        }else{
+//            return value.stringByAddingPercentEscapesUsingEncoding(encoding) ?? value
+//        }
     }
     
 }
@@ -104,7 +104,7 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
                 _preparePost(request, dict:dict)
         }
         
-        if(osVersion>=9){
+//        if(osVersion>=9){
             let session = NSURLSession.sharedSession()
             let sessionDataTask = session.dataTaskWithRequest(request, completionHandler: {
                 (odata, req, error) in
@@ -120,9 +120,9 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
                 self.doReceiveDataFinish()
             })
             sessionDataTask.resume()
-        }else{
-            NSURLConnection(request: request, delegate: self)
-        }
+//        }else{
+//            NSURLConnection(request: request, delegate: self)
+//        }
     }
     
     public func makeRequestForTest(prepare:((porter:HurryPorter)->[String:AnyObject]),
