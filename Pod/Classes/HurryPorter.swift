@@ -58,12 +58,8 @@ public class HurryPorterHelper : NSObject{
     }
     
     public class func urlEncode(value:String)->String{
-//        if(osVersion>=9){
-            return value.stringByAddingPercentEncodingWithAllowedCharacters(
+        return value.stringByAddingPercentEncodingWithAllowedCharacters(
                 NSCharacterSet.URLQueryAllowedCharacterSet()) ?? value
-//        }else{
-//            return value.stringByAddingPercentEscapesUsingEncoding(encoding) ?? value
-//        }
     }
     
 }
@@ -104,25 +100,21 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
                 _preparePost(request, dict:dict)
         }
         
-//        if(osVersion>=9){
-            let session = NSURLSession.sharedSession()
-            let sessionDataTask = session.dataTaskWithRequest(request, completionHandler: {
-                (odata, req, error) in
-                if let e = error{
-                    self.doCallbackFailed(e.description)
-                    return
-                }
-                guard let data = odata else{
-                    self.doCallbackFailed("HP_ERROR:data empty")
-                    return
-                }
-                self.responseData = NSMutableData(data: data)
-                self.doReceiveDataFinish()
-            })
-            sessionDataTask.resume()
-//        }else{
-//            NSURLConnection(request: request, delegate: self)
-//        }
+        let session = NSURLSession.sharedSession()
+        let sessionDataTask = session.dataTaskWithRequest(request, completionHandler: {
+            (odata, req, error) in
+            if let e = error{
+                self.doCallbackFailed(e.description)
+                return
+            }
+            guard let data = odata else{
+                self.doCallbackFailed("HP_ERROR:data empty")
+                return
+            }
+            self.responseData = NSMutableData(data: data)
+            self.doReceiveDataFinish()
+        })
+        sessionDataTask.resume()
     }
     
     public func makeRequestForTest(prepare:((porter:HurryPorter)->[String:AnyObject]),
