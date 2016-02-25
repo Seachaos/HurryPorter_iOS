@@ -36,20 +36,31 @@ class TableOfContentsSpec: QuickSpec {
         
         describe("make request"){
             it("should get response"){
+                let postDict = [
+                    "name":"Hurry",
+                    "value":"Porter"
+                ]
                 let porter = HurryPorter()
-                porter.makeRequest({
+                porter.makeRequestForTest({
                     (porter)->[String:AnyObject] in
-                    var dict = ["A":"B"]
-                    dict["Name"] = "Hurry"
-                    return dict
+                    return postDict
                 }, onSuccess: {
                     (porter, json, raw)->() in
                     NSLog("raw:%@", raw)
+                    guard let dict = json else {
+                        fail("json is nil")
+                        return
+                    }
+                    let dictStr = HurryPorter.dictToString(dict)
+                    expect(dictStr).notTo(beNil())
+                    expect(dictStr).notTo(beEmpty())
+                    expect(dictStr) == HurryPorter.dictToString(postDict)
+                    expect(dictStr) != "empty string"
                 }, onFailed: {
                     (porter, raw) -> () in
                     NSLog("failed:%@", raw)
                     fail(raw)
-                })
+                }, href: "http://www.myandroid.tw/test/post.php")
             }
         }
     }
