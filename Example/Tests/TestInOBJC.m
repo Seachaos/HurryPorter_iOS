@@ -7,7 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <HurryPorter/HurryPorter-umbrella.h>
 #import "HurryPorter_Example-Bridging-Header.h"
+#import "HurryPorter_Tests-Bridging-Header.h"
 
 @interface TestInOBJC : XCTestCase
 
@@ -30,6 +32,12 @@
     NSString *json = [HurryPorter dictToString:dict];
     XCTAssertNotNil(json);
     XCTAssertTrue([@"{\"AA\":\"BB\"}" isEqualToString:json]);
+}
+
+- (void)testMD5{
+    NSString *expect = @"da7a4c1171e14afc0744bf2f34d8515f";
+    NSString *md5 = [HurryPorterOC MD5:@"testaaaa"];
+    XCTAssertTrue([expect isEqualToString:md5]);
 }
 
 @end

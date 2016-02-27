@@ -63,5 +63,14 @@ class TableOfContentsSpec: QuickSpec {
                 }, href: "http://www.myandroid.tw/test/post.php")
             }
         }
+        
+        describe("test else method"){
+            it("md5 should correct"){
+                let expect_md5 = "da7a4c1171e14afc0744bf2f34d8515f"
+                let md5 = HurryPorterOC.MD5("testaaaa")
+                expect(expect_md5) == md5
+                expect(expect_md5) != "testaaaa"
+            }
+        }
     }
 }

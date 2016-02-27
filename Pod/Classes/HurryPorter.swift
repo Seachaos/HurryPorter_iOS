@@ -61,7 +61,7 @@ public class HurryPorterHelper : NSObject{
         return value.stringByAddingPercentEncodingWithAllowedCharacters(
                 NSCharacterSet.URLQueryAllowedCharacterSet()) ?? value
     }
-    
+
 }
 
 public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{

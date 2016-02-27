@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import <HurryPorter/HurryPorter-umbrella.h>
 
 @interface UsingInOBJC : NSObject

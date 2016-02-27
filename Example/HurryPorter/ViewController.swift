@@ -23,8 +23,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        let uobjc = UsingInOBJC()
-        
+        let uobjc = UsingInOBJC()        
     }
 }
 
