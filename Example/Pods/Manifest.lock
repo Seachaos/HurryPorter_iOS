@@ -1,5 +1,5 @@
 PODS:
-  - HurryPorter (0.1.0)
+  - HurryPorter (0.1.1)
   - Nimble (3.0.0)
   - Quick (0.8.0)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HurryPorter: 791716b75a247fa77262b80dee83cbaf3a0caf53
+  HurryPorter: 0e94ed83ebcdb3774ae5952ea96188253e239d68
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
 

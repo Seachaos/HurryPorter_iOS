@@ -18,26 +18,25 @@
 		219C8A7EEE686FC2FA72BA370234DF4B /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F492985EB6550A418DD3DB1BCDE146 /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		229CCB55EEBA1D626E0B282CBE18B36D /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0BEE5B67844F0E333920C2CB3416C /* SuiteHooks.swift */; };
 		2481402174E3260984300150243B31FD /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E0D7E2D11371A45CB3D1221E7B4EC2 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26DE538C6DC0CADA0F0F6C507ABA9144 /* HurryPorterOC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45FE5C0B9B79F2279E6A596E6BBF5E9 /* HurryPorterOC.m */; };
 		28FDCEC01DC3C83A7FE64C19A6896953 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD2CC5441C4540A072B29E4A257A9D /* DSL.swift */; };
 		29B3455F0ADAFD1EBA784FD60BAAE2FD /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D4A64A54F414359EC782444B27597B /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3B916F7168E9412EDB95BA203A5BB4 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BC0728045ED4D4A2C12B52A561EEF7 /* ThrowError.swift */; };
-		323447AE5E86BC798F23F731ECB7563B /* HurryPorter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B41827E4C78B5D409F9AFAF80574DD /* HurryPorter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33264C6A7A3536AD91EF42B3E8CC8220 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BB6589A73F51F073DF050F55D7F41 /* BeGreaterThanOrEqualTo.swift */; };
 		33514FEE6EA65605EFB6F1801834B692 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C995C72A44C02A9369FA2BDB1F4FF /* AssertionDispatcher.swift */; };
 		3A92AEE86034356AF8987F20EE1F82DF /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B6303CCFDEBF93094E92D50CAFF38 /* EndWith.swift */; };
 		3AEAC447B09E7AABC140654C8529BC94 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43EEEBE209F0CF242FBC231937E6922 /* MatcherFunc.swift */; };
+		46077D75C5D3F8C4561B24A098570B04 /* HurryPorter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D6FF67B950C4EFBDF3AB38A0FC4B1A /* HurryPorter-dummy.m */; };
 		48638C5D100A7C99D1D6E308019BFB7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		4E87C6AE24AB15700A39FC24A2F1C93B /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12C6F645E5DC0EDB23023A394F1CB1 /* BeLessThanOrEqual.swift */; };
 		512DFAE728521F02AF225F0082195DCC /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 784135A9193F0FE38182AF2C577B3A52 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53039556986BA46C4895AE80CA672B6D /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ABC5A3D02301EC1EC014B6ABEFA42A /* NSString+QCKSelectorName.m */; };
 		58EBA2C1A43283FB2188AB1FB592D32B /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9040AB08CA7AEB727960E284F746A4 /* DSL.swift */; };
-		5EA3F598228359A479623BAEC9499759 /* HurryPorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A703E0AD46F37ABC3FD84C4D49D16C /* HurryPorter.swift */; };
-		6403BE3501F0E3FA4207CA08C555E052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
+		629F6C1032A8295442E38F0EFCF39E39 /* HurryPorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7934EE7C2D9FD4FB5C40D02317782 /* HurryPorter.swift */; };
 		65AA25DC5BE6C7A577BE73117F40450E /* Pods-HurryPorter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BDD500D45D200BE8FEA7A14835B13E2 /* Pods-HurryPorter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67E906EA9F0306D47D6B270B9459ED8C /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 616BFD5BF73AEF373E5250D05560A338 /* Quick-dummy.m */; };
 		69A59850148F1C54ED503343FAC3F25D /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 62241019A9DFE31F82A2CDF8690A163C /* QuickSpec.m */; };
 		6B91F52E96767E568E11F329E5603D61 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0EAA5BA062125C64E6A819695F87C6 /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		70FC73E600C94934C466D739530AACED /* HurryPorter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F8019032A380D660C89F26125B3EFEB /* HurryPorter.bundle */; };
 		73695FA6A6CDFBB13C0CC73C2E5126C0 /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9634CF58B22F95DF5AA222CDAF9B8 /* Nimble-dummy.m */; };
 		7680F08C43B965EC873D26E6AD854C9F /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1AA2E4CDFA7B6FD9B4F253CAF481F /* BeIdenticalTo.swift */; };
 		77128C0365A98E3BAC038A915B38791C /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53DF3C5B85F993313E9FA09386C167 /* BeAKindOf.swift */; };
@@ -48,12 +47,13 @@
 		831D33A4C5C5BBC1EC158D9A236C61D7 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596CB4CEA7B7B71461C9ECE75263656 /* NimbleXCTestHandler.swift */; };
 		83F7A36D3555CC332F5A03141DF81FCB /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA1EFFE836005E11B9D420692E9E50C /* Example.swift */; };
 		84B22BD2F83FBF95EF877E1737E148D3 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38715BF4570032AE706B97AB11365E48 /* ExampleMetadata.swift */; };
-		857261AC541C3AAF30E73B21CD97D68D /* HurryPorter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D6FF67B950C4EFBDF3AB38A0FC4B1A /* HurryPorter-dummy.m */; };
 		8D0BF52FF564A170A3D1DE28C27B233E /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F689A549CFB432AE0684F3EA3BA8D2FF /* Poll.swift */; };
+		8D9594424C94417730629AD7220886F0 /* HurryPorterOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E51377BEAF6F51DFE23B55FDBB73539 /* HurryPorterOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9187EEC2982DB82AD8D3A7001AA647D6 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F4CE0DE16848CBDA8A93366A52BEF7 /* NMBExceptionCapture.m */; };
 		9341B96D63EF6C54A1F906A1BBAEAF46 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = DA695A07DF17BA243064E57D889E1CBB /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94FDB5648EA2B8C8E2EEE007194AD9A7 /* Pods-HurryPorter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6F71E79DF5B8C6EAC5DE53D14369142 /* Pods-HurryPorter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9646787942A85613FE77F45794E9B5CD /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CD57ED9D79412A49A037E8EAA4AF42 /* BeginWith.swift */; };
+		977BA0FF1BD8A8DB384FCD3D30F9EF82 /* HurryPorter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F8019032A380D660C89F26125B3EFEB /* HurryPorter.bundle */; };
 		9E7786C034F0E0A6B5F0A0E6BE7D7E4A /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE24AE8654BDA8234080C23F6335E26 /* BeEmpty.swift */; };
 		A05EBDCAF84A848E59B6DDA2177186B1 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487245080A1AB0FFD48288B814AEA82 /* World.swift */; };
 		B0A26F58BA3E6222E50AE5AC883B8EAF /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D17DFC0D37F8449B1B2A2D117D1179A2 /* DSL.m */; };
@@ -64,6 +64,7 @@
 		B905718B2501DDA22F2AE73CB6E76E6B /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A378AC6A7BCB5D43F7586353A7610A /* BeCloseTo.swift */; };
 		BB4F35062294C1A461DA3CEF6306A1DB /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC3268759E7DB38A0E192F06A1BD06 /* HaveCount.swift */; };
 		BCB53F24DCADF12601B8BA90AE3190AE /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69578BBC16AAA12ED9630E2036580E94 /* BeLessThan.swift */; };
+		BE1F8191D0A61F17829EA77882358A94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		BF2FD5C9D22C8632B74F9E24A6A82E2D /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9D0077C69A720B9DD2BB12344FD893 /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFF96369C86081289625F4744107CD81 /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = E41A31E4949F1319040B8D2BBBF2B5D6 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C150157922BAEB1F93635508FB59E618 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
@@ -78,14 +79,13 @@
 		D4DC01DA0A054AA95490CDECFD93E808 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2543809E4D3D9755B94735346ACDFF03 /* QCKDSL.m */; };
 		D5F5EAA077CE48A924E41DBBDD19B95C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AA6492631DEFA8C439A9C088EEB8A /* XCTest.framework */; };
 		D7B45D4600C6166C124C0A926EE65284 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E302676FFF0A4192E3ECFB4B1FDCF6 /* Functional.swift */; };
+		D8AF601D4B9ADDBD6E6E3EC14B122F18 /* HurryPorter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B41827E4C78B5D409F9AFAF80574DD /* HurryPorter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB0C80CEC33256B568D90369A1C239F6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF695047E0AAFB3CA54EC10F0E97FD3 /* Configuration.swift */; };
 		DEB46D9F3AEF490354D6DFC76DF26720 /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AE670FBBCC7FBB0E81F05DA0C8EAAEE5 /* QuickConfiguration.m */; };
 		DEE170DD3064F7343884A4016546B762 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA388FEA33C5B8824432D9681B318F3 /* DSL+Wait.swift */; };
 		E2FBD93D72DF01427486D1A6853FC689 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3116FC3DA077740D1C5702FA4C187A2 /* Expectation.swift */; };
 		E36C5201AE7F1CBB25F9D2E7CBFC3C20 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0843BD7412E439120C081E8D9FE0F80 /* Match.swift */; };
 		E6E7B15FAD6C56681511813DB2666478 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D274316F8C6F9695294FB40D7596F /* AssertionRecorder.swift */; };
-		F04D571D1C823CF900665E95 /* HurryPorterOC.h in Headers */ = {isa = PBXBuildFile; fileRef = F04D571B1C823CF900665E95 /* HurryPorterOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F04D571E1C823CF900665E95 /* HurryPorterOC.m in Sources */ = {isa = PBXBuildFile; fileRef = F04D571C1C823CF900665E95 /* HurryPorterOC.m */; };
 		F10FD3129985704FA1610F84FB98EDF5 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31CE50F8B4B99D3C229D2438892ED5B /* Stringers.swift */; };
 		F1D4A8A1FC68EFA7F45945908D70A352 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02297D692E5CA1B1C21CCCDA1853BA44 /* BeNil.swift */; };
 		F3EEFB915A9D8C12E53C95765C2D1F04 /* Pods-HurryPorter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD509B921BC2C6702744369FE26864A /* Pods-HurryPorter_Example-dummy.m */; };
@@ -100,21 +100,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 57A1D82100035A90E552AB332C4A0D64;
+			remoteGlobalIDString = 884442412E6DE8AA927FF66469C00032;
 			remoteInfo = HurryPorter;
-		};
-		2D07BC59F0378DAB2BDE1CBA332170C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1B55F02E624C7448CB0D22EA694AC34;
-			remoteInfo = "HurryPorter-HurryPorter";
 		};
 		3C2092F58C2CE7C749A24928FD5CC44B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 57A1D82100035A90E552AB332C4A0D64;
+			remoteGlobalIDString = 884442412E6DE8AA927FF66469C00032;
 			remoteInfo = HurryPorter;
 		};
 		BD7DA3D979B0A5812241332EB4BB4AAC /* PBXContainerItemProxy */ = {
@@ -130,6 +123,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C5DB5104FED3C10F78978AFC810982B9;
 			remoteInfo = Nimble;
+		};
+		FC275AC1E42342A2171F589FE4B7242A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42AE6BE245A9D49813FEC00681CBAD81;
+			remoteInfo = "HurryPorter-HurryPorter";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -157,6 +157,7 @@
 		28E302676FFF0A4192E3ECFB4B1FDCF6 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
 		29A378AC6A7BCB5D43F7586353A7610A /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
 		2B9040AB08CA7AEB727960E284F746A4 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
+		2E51377BEAF6F51DFE23B55FDBB73539 /* HurryPorterOC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HurryPorterOC.h; sourceTree = "<group>"; };
 		2E89ED17B1945991E83FAAD15EC294D6 /* Pods-HurryPorter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HurryPorter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2FE24AE8654BDA8234080C23F6335E26 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
 		33DD2CC5441C4540A072B29E4A257A9D /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
@@ -192,16 +193,17 @@
 		75A8F08988FD43499B53DDB4C8385C8A /* Pods_HurryPorter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HurryPorter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HurryPorter.xcconfig; sourceTree = "<group>"; };
 		784135A9193F0FE38182AF2C577B3A52 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
-		79A703E0AD46F37ABC3FD84C4D49D16C /* HurryPorter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HurryPorter.swift; sourceTree = "<group>"; };
 		7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
 		7CAC9A4824BB52A6A219EAD1E33E6D0E /* Pods-HurryPorter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HurryPorter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8487245080A1AB0FFD48288B814AEA82 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
 		88457B3A5C81E0F34AC48AC05B8040D6 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
 		8880B82EFD81A0D6EE2BBD27A39D61BA /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
 		8E12C6F645E5DC0EDB23023A394F1CB1 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		92F7934EE7C2D9FD4FB5C40D02317782 /* HurryPorter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HurryPorter.swift; sourceTree = "<group>"; };
 		94A039912FDC46FCB2AF6DCEEB91ADB4 /* World+DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "World+DSL.h"; path = "Quick/DSL/World+DSL.h"; sourceTree = "<group>"; };
 		9567533A478ECC5F43A2FA3B959EDAF7 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A168D2F298C0E4EF3CDB012DAD6EF39F /* HurryPorter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HurryPorter.modulemap; sourceTree = "<group>"; };
+		A45FE5C0B9B79F2279E6A596E6BBF5E9 /* HurryPorterOC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HurryPorterOC.m; sourceTree = "<group>"; };
 		A6B80EC626C808444C10B6CE4236108E /* Pods-HurryPorter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HurryPorter_Tests-dummy.m"; sourceTree = "<group>"; };
 		AE670FBBCC7FBB0E81F05DA0C8EAAEE5 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
 		AE6E3634125A20B9BA58962919B08DDC /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
@@ -236,8 +238,6 @@
 		E41A31E4949F1319040B8D2BBBF2B5D6 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
 		E43EEEBE209F0CF242FBC231937E6922 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
 		ECB4882E47E7537D32F4C677DF4F0B43 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
-		F04D571B1C823CF900665E95 /* HurryPorterOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HurryPorterOC.h; sourceTree = "<group>"; };
-		F04D571C1C823CF900665E95 /* HurryPorterOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HurryPorterOC.m; sourceTree = "<group>"; };
 		F0C0313C59C95BDF70F4C1F4BAE270C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1D4A64A54F414359EC782444B27597B /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
 		F5F4CE0DE16848CBDA8A93366A52BEF7 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
@@ -261,6 +261,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57E01D0BBCC33F9498D6C864A335DAF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FBD7B1537B634BB7C94BB4D4384BD63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,26 +276,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99AAA87D24A50B381BB59A7A612534F1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6403BE3501F0E3FA4207CA08C555E052 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD1803F33C52446027EA6DE364B14AA5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D29618A05AE39A983B71AC39D72583F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F53028379C3B21B82962F376144CBE7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB3145F2B7780650FB621BD2A7FA3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1F8191D0A61F17829EA77882358A94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,14 +304,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07D5855C9E77731BDE35A3FEE6B70503 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				ADB2E422DEE2916266CE75D68BBB561B /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		0C6B012983F9FEF8CC65C1318F5F090C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +379,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		4D195F680D3349EEFE1F360372EC1A7B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4D8343D4A8455B848AABF90886ACF488 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		4D8343D4A8455B848AABF90886ACF488 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				92F7934EE7C2D9FD4FB5C40D02317782 /* HurryPorter.swift */,
+				2E51377BEAF6F51DFE23B55FDBB73539 /* HurryPorterOC.h */,
+				A45FE5C0B9B79F2279E6A596E6BBF5E9 /* HurryPorterOC.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		64E98FF7B6454214F8290BB0AC208D8F /* Quick */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,7 +445,7 @@
 		7C3AEDB3E27DCA0776CC530B1D2B6FA1 /* HurryPorter */ = {
 			isa = PBXGroup;
 			children = (
-				07D5855C9E77731BDE35A3FEE6B70503 /* Pod */,
+				4D195F680D3349EEFE1F360372EC1A7B /* Pod */,
 				7B125DE963BE8630600693C4AB1239AE /* Support Files */,
 			);
 			name = HurryPorter;
@@ -479,16 +489,6 @@
 				64E98FF7B6454214F8290BB0AC208D8F /* Quick */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		ADB2E422DEE2916266CE75D68BBB561B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				79A703E0AD46F37ABC3FD84C4D49D16C /* HurryPorter.swift */,
-				F04D571B1C823CF900665E95 /* HurryPorterOC.h */,
-				F04D571C1C823CF900665E95 /* HurryPorterOC.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		D877BEEDC4F6494B4B10BC732B32A32B /* Nimble */ = {
@@ -594,12 +594,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1A13627A1CA92523B5B559555A34143 /* Headers */ = {
+		837EC31DD8E0CA01ABBF345F75842356 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323447AE5E86BC798F23F731ECB7563B /* HurryPorter-umbrella.h in Headers */,
-				F04D571D1C823CF900665E95 /* HurryPorterOC.h in Headers */,
+				D8AF601D4B9ADDBD6E6E3EC14B122F18 /* HurryPorter-umbrella.h in Headers */,
+				8D9594424C94417730629AD7220886F0 /* HurryPorterOC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,32 +617,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		57A1D82100035A90E552AB332C4A0D64 /* HurryPorter */ = {
+		42AE6BE245A9D49813FEC00681CBAD81 /* HurryPorter-HurryPorter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49E8BD510CA1A000F800CAAFA10A1386 /* Build configuration list for PBXNativeTarget "HurryPorter" */;
+			buildConfigurationList = 0E524ED9A4A315F2525A2E76A9EDC604 /* Build configuration list for PBXNativeTarget "HurryPorter-HurryPorter" */;
 			buildPhases = (
-				3E0E48612F03C338632A1DAAF2999C85 /* Sources */,
-				99AAA87D24A50B381BB59A7A612534F1 /* Frameworks */,
-				EF88E0A757610F74B9E94A08795F7AD4 /* Resources */,
-				C1A13627A1CA92523B5B559555A34143 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE8E5A35953F73ED7241653C115DB50D /* PBXTargetDependency */,
-			);
-			name = HurryPorter;
-			productName = HurryPorter;
-			productReference = C1FDE379F73E8317364C23205D4B157C /* HurryPorter.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B1B55F02E624C7448CB0D22EA694AC34 /* HurryPorter-HurryPorter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3AEA0C63185B9B70234B8C15836B2424 /* Build configuration list for PBXNativeTarget "HurryPorter-HurryPorter" */;
-			buildPhases = (
-				9CA7156E64DBBEA6FA8B8F40D903AAB4 /* Sources */,
-				BD1803F33C52446027EA6DE364B14AA5 /* Frameworks */,
-				453413DBEE742B71E0B00622440ECB50 /* Resources */,
+				FA7EF4E901A81DA5FEEE64C2DDCEC9F0 /* Sources */,
+				57E01D0BBCC33F9498D6C864A335DAF0 /* Frameworks */,
+				55DC0039EF7F3AF4F94A6CAA6BBD0BA7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -652,6 +633,25 @@
 			productName = "HurryPorter-HurryPorter";
 			productReference = 5F8019032A380D660C89F26125B3EFEB /* HurryPorter.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		884442412E6DE8AA927FF66469C00032 /* HurryPorter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EEE5F1E9C3E19245ACE543D9A254AD4 /* Build configuration list for PBXNativeTarget "HurryPorter" */;
+			buildPhases = (
+				106AF0C101D3FD1293462334CC92B0BA /* Sources */,
+				DAB3145F2B7780650FB621BD2A7FA3AF /* Frameworks */,
+				83F9F98A4F9C5D419C692AF6DA97B0D5 /* Resources */,
+				837EC31DD8E0CA01ABBF345F75842356 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FDC4E6DA37F27AC324460C57A879299 /* PBXTargetDependency */,
+			);
+			name = HurryPorter;
+			productName = HurryPorter;
+			productReference = C1FDE379F73E8317364C23205D4B157C /* HurryPorter.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		B33FBBC4C25A3CF3149C65221FBB7C5F /* Quick */ = {
 			isa = PBXNativeTarget;
@@ -746,8 +746,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57A1D82100035A90E552AB332C4A0D64 /* HurryPorter */,
-				B1B55F02E624C7448CB0D22EA694AC34 /* HurryPorter-HurryPorter */,
+				884442412E6DE8AA927FF66469C00032 /* HurryPorter */,
+				42AE6BE245A9D49813FEC00681CBAD81 /* HurryPorter-HurryPorter */,
 				C5DB5104FED3C10F78978AFC810982B9 /* Nimble */,
 				B390C3D8791C1C3271D8973BDCC13503 /* Pods-HurryPorter_Example */,
 				BEC8264CF17B3F043EA01C6CE27A481C /* Pods-HurryPorter_Tests */,
@@ -757,31 +757,31 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		453413DBEE742B71E0B00622440ECB50 /* Resources */ = {
+		55DC0039EF7F3AF4F94A6CAA6BBD0BA7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF88E0A757610F74B9E94A08795F7AD4 /* Resources */ = {
+		83F9F98A4F9C5D419C692AF6DA97B0D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70FC73E600C94934C466D739530AACED /* HurryPorter.bundle in Resources */,
+				977BA0FF1BD8A8DB384FCD3D30F9EF82 /* HurryPorter.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3E0E48612F03C338632A1DAAF2999C85 /* Sources */ = {
+		106AF0C101D3FD1293462334CC92B0BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857261AC541C3AAF30E73B21CD97D68D /* HurryPorter-dummy.m in Sources */,
-				5EA3F598228359A479623BAEC9499759 /* HurryPorter.swift in Sources */,
-				F04D571E1C823CF900665E95 /* HurryPorterOC.m in Sources */,
+				46077D75C5D3F8C4561B24A098570B04 /* HurryPorter-dummy.m in Sources */,
+				629F6C1032A8295442E38F0EFCF39E39 /* HurryPorter.swift in Sources */,
+				26DE538C6DC0CADA0F0F6C507ABA9144 /* HurryPorterOC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,13 +790,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3EEFB915A9D8C12E53C95765C2D1F04 /* Pods-HurryPorter_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CA7156E64DBBEA6FA8B8F40D903AAB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,13 +873,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA7EF4E901A81DA5FEEE64C2DDCEC9F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		223A3CE9C6B211FEAF2F1C9F493A47C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HurryPorter;
-			target = 57A1D82100035A90E552AB332C4A0D64 /* HurryPorter */;
+			target = 884442412E6DE8AA927FF66469C00032 /* HurryPorter */;
 			targetProxy = 1D980C0B4007FF3ECB2A15D2E5EBC9C1 /* PBXContainerItemProxy */;
 		};
 		2E56817D8D86AE85A71D860FE12F222B /* PBXTargetDependency */ = {
@@ -894,6 +894,12 @@
 			name = Nimble;
 			target = C5DB5104FED3C10F78978AFC810982B9 /* Nimble */;
 			targetProxy = D3FDFA11CBA2D94C69A3757795C6C0E4 /* PBXContainerItemProxy */;
+		};
+		3FDC4E6DA37F27AC324460C57A879299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HurryPorter-HurryPorter";
+			target = 42AE6BE245A9D49813FEC00681CBAD81 /* HurryPorter-HurryPorter */;
+			targetProxy = FC275AC1E42342A2171F589FE4B7242A /* PBXContainerItemProxy */;
 		};
 		437184EF70DF6B0A51C3303C4167A5B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -904,53 +910,56 @@
 		5A77A45A37658F28ECF518B8FDBE1238 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HurryPorter;
-			target = 57A1D82100035A90E552AB332C4A0D64 /* HurryPorter */;
+			target = 884442412E6DE8AA927FF66469C00032 /* HurryPorter */;
 			targetProxy = 3C2092F58C2CE7C749A24928FD5CC44B /* PBXContainerItemProxy */;
-		};
-		EE8E5A35953F73ED7241653C115DB50D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "HurryPorter-HurryPorter";
-			target = B1B55F02E624C7448CB0D22EA694AC34 /* HurryPorter-HurryPorter */;
-			targetProxy = 2D07BC59F0378DAB2BDE1CBA332170C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+		14A73A67C7B24215B7F0A640423ED4BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C83A0674524CE7527FBFA9BAA6B842FF /* Pods-HurryPorter_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HurryPorter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HurryPorter_Example/Pods-HurryPorter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HurryPorter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1DE49C6B97B536B1D89031268D4F6CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = HurryPorter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
-		14324E5D68628979E9E8D1E253DF5098 /* Release */ = {
+		21FE3FA9A10950C573CC4B0019E54A20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D08DACC32EFB9B146D6CBE5EC71F976 /* Pods-HurryPorter_Tests.release.xcconfig */;
 			buildSettings = {
@@ -963,7 +972,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-HurryPorter_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HurryPorter_Tests/Pods-HurryPorter_Tests.modulemap";
@@ -980,7 +989,73 @@
 			};
 			name = Release;
 		};
-		2FCF8F86C52F20A68E9C4BC471545A19 /* Debug */ = {
+		3E6D1C6676F7BB39BF8FCD41724DCA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = HurryPorter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		52F34A1334AD3DADF55E25C804867301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HurryPorter/HurryPorter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HurryPorter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HurryPorter/HurryPorter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HurryPorter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63D5A9E11ECD94DD4362BE7CF1466A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Quick/Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A06B6722A825A2D0673423AD27471BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D61039AE553DADCA1D872DD1FB2D363D /* Pods-HurryPorter_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -993,7 +1068,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-HurryPorter_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HurryPorter_Tests/Pods-HurryPorter_Tests.modulemap";
@@ -1011,9 +1086,9 @@
 			};
 			name = Debug;
 		};
-		3A931A7644CC926D3162E0BA9E4ACFA6 /* Debug */ = {
+		A681087677C85BE5BEACBAC8235EA621 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B68A276C05A93CFCC331A055BCA33167 /* Nimble.xcconfig */;
+			baseConfigurationReference = 2E89ED17B1945991E83FAAD15EC294D6 /* Pods-HurryPorter_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1022,42 +1097,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HurryPorter_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Nimble;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4EF564BEA62C557AE8F9B8C1693AA239 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B68A276C05A93CFCC331A055BCA33167 /* Nimble.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HurryPorter_Example/Pods-HurryPorter_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Nimble;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HurryPorter_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1066,7 +1116,7 @@
 			};
 			name = Release;
 		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1098,26 +1148,69 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		5E082BA98390A11EF9FC249E17FF1BC3 /* Debug */ = {
+		D0196207478EC813DDBD13CD6B08E752 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */;
+			baseConfigurationReference = B68A276C05A93CFCC331A055BCA33167 /* Nimble.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = HurryPorter;
+				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Nimble;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DBD776E647076F7F8586B1551480E0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Quick/Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		5EC033E80F1D3F6BA432D38B10D7C596 /* Debug */ = {
+		E3D924D4494D144FA3341354AF017488 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */;
 			buildSettings = {
@@ -1133,16 +1226,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/system",
-				);
 				MODULEMAP_FILE = "Target Support Files/HurryPorter/HurryPorter.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = HurryPorter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1150,9 +1238,9 @@
 			};
 			name = Debug;
 		};
-		67C8D0D9BF075E9256829A6D9AEFBE5D /* Debug */ = {
+		F219D9BC179B01DCB5964379A5A57D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */;
+			baseConfigurationReference = B68A276C05A93CFCC331A055BCA33167 /* Nimble.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1161,172 +1249,74 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Quick/Quick-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Quick;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9DFD3B22965A510DC8135F25A6F1EA8C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = HurryPorter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		BC77D76B018003ED9F4BBEB3397787D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C83A0674524CE7527FBFA9BAA6B842FF /* Pods-HurryPorter_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HurryPorter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HurryPorter_Example/Pods-HurryPorter_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_HurryPorter_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C32C0E4CD38C6B134B3C264431A09D47 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 766D7EB62B58919D7EC822C42B3EC1F2 /* HurryPorter.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HurryPorter/HurryPorter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HurryPorter/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/system",
-				);
-				MODULEMAP_FILE = "Target Support Files/HurryPorter/HurryPorter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HurryPorter;
+				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Nimble;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		F178EC03D841505BFC517BF521275BF3 /* Release */ = {
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Quick/Quick-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Quick;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FFAF3C7AD0CB8BC772EAA0918ADC6F1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E89ED17B1945991E83FAAD15EC294D6 /* Pods-HurryPorter_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HurryPorter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HurryPorter_Example/Pods-HurryPorter_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_HurryPorter_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0E524ED9A4A315F2525A2E76A9EDC604 /* Build configuration list for PBXNativeTarget "HurryPorter-HurryPorter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				3E6D1C6676F7BB39BF8FCD41724DCA06 /* Debug */,
+				1DE49C6B97B536B1D89031268D4F6CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AEA0C63185B9B70234B8C15836B2424 /* Build configuration list for PBXNativeTarget "HurryPorter-HurryPorter" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E082BA98390A11EF9FC249E17FF1BC3 /* Debug */,
-				9DFD3B22965A510DC8135F25A6F1EA8C /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1334,17 +1324,17 @@
 		476CB4AB2D5A1C278285400847483DEF /* Build configuration list for PBXNativeTarget "Pods-HurryPorter_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FCF8F86C52F20A68E9C4BC471545A19 /* Debug */,
-				14324E5D68628979E9E8D1E253DF5098 /* Release */,
+				8A06B6722A825A2D0673423AD27471BE /* Debug */,
+				21FE3FA9A10950C573CC4B0019E54A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49E8BD510CA1A000F800CAAFA10A1386 /* Build configuration list for PBXNativeTarget "HurryPorter" */ = {
+		5EEE5F1E9C3E19245ACE543D9A254AD4 /* Build configuration list for PBXNativeTarget "HurryPorter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5EC033E80F1D3F6BA432D38B10D7C596 /* Debug */,
-				C32C0E4CD38C6B134B3C264431A09D47 /* Release */,
+				E3D924D4494D144FA3341354AF017488 /* Debug */,
+				52F34A1334AD3DADF55E25C804867301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1352,8 +1342,8 @@
 		88C9202DF2D2DCD4DC0A5D7EF4AB9D6B /* Build configuration list for PBXNativeTarget "Pods-HurryPorter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC77D76B018003ED9F4BBEB3397787D8 /* Debug */,
-				FFAF3C7AD0CB8BC772EAA0918ADC6F1E /* Release */,
+				14A73A67C7B24215B7F0A640423ED4BA /* Debug */,
+				A681087677C85BE5BEACBAC8235EA621 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1361,8 +1351,8 @@
 		D4DCEA35595251EC6B9BDC29A571E7B2 /* Build configuration list for PBXNativeTarget "Nimble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A931A7644CC926D3162E0BA9E4ACFA6 /* Debug */,
-				4EF564BEA62C557AE8F9B8C1693AA239 /* Release */,
+				F219D9BC179B01DCB5964379A5A57D3E /* Debug */,
+				D0196207478EC813DDBD13CD6B08E752 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1370,8 +1360,8 @@
 		E035C650FC744F00271B40908F3711EE /* Build configuration list for PBXNativeTarget "Quick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67C8D0D9BF075E9256829A6D9AEFBE5D /* Debug */,
-				F178EC03D841505BFC517BF521275BF3 /* Release */,
+				DBD776E647076F7F8586B1551480E0E2 /* Debug */,
+				63D5A9E11ECD94DD4362BE7CF1466A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

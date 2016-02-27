@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '94ED16A9B8EF8063CECD6672'
+               BlueprintIdentifier = 'FAC881FFFD0545CF4758F988'
                BlueprintName = 'HurryPorter'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'HurryPorter.framework'>
