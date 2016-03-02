@@ -72,6 +72,10 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
     public var timeout = 30
     public var method = METHOD.POST
     
+    
+    public var prepareData:HurryPorterHookDelegatePrepareData?
+    public var checkResponse:HurryPorterHookDelegateCheckResponse?
+    
     var callback_success:((porter:HurryPorter, json:[String:AnyObject]?, raw:String)->())?
     var callback_failed:((porter:HurryPorter,  raw:String)->())?
     var busy = false
@@ -84,10 +88,16 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
         onFailed:((porter:HurryPorter,  raw:String)->()),
         href:String
     ){
+        prepareData = prepareData ?? HurryPorterHook.global.prepareData
+        checkResponse = checkResponse ?? HurryPorterHook.global.checkResponse
         busy = true
         callback_success = onSuccess
         callback_failed = onFailed
-        let dict = prepare(porter: self)
+        var dict = prepare(porter: self)
+        
+        if let func_pd = prepareData{
+            dict = func_pd.willBeSent(self, json: dict)
+        }
         
         guard let url = NSURL(string: href) else{
             doCallbackFailed("HP_ERROR:URL Error")
@@ -160,7 +170,21 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
             return
         }
         let json = HurryPorterHelper.stringToDict(responseString)
-        cb(porter: self, json: json, raw: responseString)
+        
+        // if has hook for check response
+        if let func_cr = checkResponse{
+            if func_cr.verifyData(self, json: json, raw: responseString) {
+                cb(porter: self, json: json, raw: responseString)
+            }else{
+                // try get error message
+                let emsg = func_cr.errorMessage(self, json: json, raw: responseString)
+                let errorMsg = emsg ?? responseString
+                doCallbackFailed(errorMsg)
+            }
+        }else{
+            // normal success
+            cb(porter: self, json: json, raw: responseString)
+        }
         busy = false
     }
     

@@ -86,6 +86,7 @@
 		E2FBD93D72DF01427486D1A6853FC689 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3116FC3DA077740D1C5702FA4C187A2 /* Expectation.swift */; };
 		E36C5201AE7F1CBB25F9D2E7CBFC3C20 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0843BD7412E439120C081E8D9FE0F80 /* Match.swift */; };
 		E6E7B15FAD6C56681511813DB2666478 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D274316F8C6F9695294FB40D7596F /* AssertionRecorder.swift */; };
+		F04D57221C8755DF00665E95 /* HurryPorterHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D57211C8755DF00665E95 /* HurryPorterHook.swift */; };
 		F10FD3129985704FA1610F84FB98EDF5 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31CE50F8B4B99D3C229D2438892ED5B /* Stringers.swift */; };
 		F1D4A8A1FC68EFA7F45945908D70A352 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02297D692E5CA1B1C21CCCDA1853BA44 /* BeNil.swift */; };
 		F3EEFB915A9D8C12E53C95765C2D1F04 /* Pods-HurryPorter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD509B921BC2C6702744369FE26864A /* Pods-HurryPorter_Example-dummy.m */; };
@@ -238,6 +239,7 @@
 		E41A31E4949F1319040B8D2BBBF2B5D6 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
 		E43EEEBE209F0CF242FBC231937E6922 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
 		ECB4882E47E7537D32F4C677DF4F0B43 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
+		F04D57211C8755DF00665E95 /* HurryPorterHook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HurryPorterHook.swift; sourceTree = "<group>"; };
 		F0C0313C59C95BDF70F4C1F4BAE270C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1D4A64A54F414359EC782444B27597B /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
 		F5F4CE0DE16848CBDA8A93366A52BEF7 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				92F7934EE7C2D9FD4FB5C40D02317782 /* HurryPorter.swift */,
+				F04D57211C8755DF00665E95 /* HurryPorterHook.swift */,
 				2E51377BEAF6F51DFE23B55FDBB73539 /* HurryPorterOC.h */,
 				A45FE5C0B9B79F2279E6A596E6BBF5E9 /* HurryPorterOC.m */,
 			);
@@ -782,6 +785,7 @@
 				46077D75C5D3F8C4561B24A098570B04 /* HurryPorter-dummy.m in Sources */,
 				629F6C1032A8295442E38F0EFCF39E39 /* HurryPorter.swift in Sources */,
 				26DE538C6DC0CADA0F0F6C507ABA9144 /* HurryPorterOC.m in Sources */,
+				F04D57221C8755DF00665E95 /* HurryPorterHook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

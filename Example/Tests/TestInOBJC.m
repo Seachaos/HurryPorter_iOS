@@ -29,7 +29,7 @@
 
 - (void)testJSONConvert{
     NSDictionary *dict = @{@"AA":@"BB"};
-    NSString *json = [HurryPorter dictToString:dict];
+    NSString *json = [HurryPorterHelper dictToString:dict];
     XCTAssertNotNil(json);
     XCTAssertTrue([@"{\"AA\":\"BB\"}" isEqualToString:json]);
 }

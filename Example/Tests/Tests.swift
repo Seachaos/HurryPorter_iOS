@@ -43,6 +43,8 @@ class TableOfContentsSpec: QuickSpec {
                 let porter = HurryPorter()
                 porter.makeRequestForTest({
                     (porter)->[String:AnyObject] in
+                    porter.prepareData = nil
+                    porter.checkResponse = nil
                     return postDict
                 }, onSuccess: {
                     (porter, json, raw)->() in

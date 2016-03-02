@@ -1,0 +1,1 @@
+../../../Snape_iOS/Pod/Classes/SnapeTaskObject.h
