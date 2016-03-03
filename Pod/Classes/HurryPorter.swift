@@ -77,15 +77,19 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
     public var checkResponse:HurryPorterHookDelegateCheckResponse?
     
     var callback_success:((porter:HurryPorter, json:[String:AnyObject]?, raw:String)->())?
-    var callback_failed:((porter:HurryPorter,  raw:String)->())?
+    var callback_failed:((porter:HurryPorter,  raw:String, status:Int)->())?
     var busy = false
+    
     var responseData = NSMutableData()
-    var responseString = ""
+    public var responseString = ""
+    public var responseJSON:[String:AnyObject]?
+    public var errorCode = 0
+    
     var osVersion = HurryPorterHelper.osVersion
     
     public func makeRequest(prepare:((porter:HurryPorter)->[String:AnyObject]),
         onSuccess:((porter:HurryPorter, json:[String:AnyObject]?, raw:String)->()),
-        onFailed:((porter:HurryPorter,  raw:String)->()),
+        onFailed:((porter:HurryPorter,  raw:String, status:Int)->()),
         href:String
     ){
         prepareData = prepareData ?? HurryPorterHook.global.prepareData
@@ -129,7 +133,7 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
     
     public func makeRequestForTest(prepare:((porter:HurryPorter)->[String:AnyObject]),
         onSuccess:((porter:HurryPorter, json:[String:AnyObject]?, raw:String)->()),
-        onFailed:((porter:HurryPorter,  raw:String)->()),
+        onFailed:((porter:HurryPorter,  raw:String, status:Int)->()),
         href:String
     ){
         makeRequest(prepare, onSuccess: onSuccess, onFailed: onFailed, href:href)
@@ -156,20 +160,23 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
         guard let cb = callback_failed else{
             return
         }
-        cb(porter: self, raw: msg);
+        cb(porter: self, raw: msg, status: self.errorCode);
         busy = false
     }
     
     func doReceiveDataFinish(){
-        guard let responseString = String(data: responseData, encoding: NSUTF8StringEncoding) else{
+        guard let _string = String(data: responseData, encoding: NSUTF8StringEncoding) else{
             doCallbackFailed("HP_ERROR:responseData error")
             return
         }
+        self.responseString = _string
+        
         guard let cb = callback_success else{
             doCallbackFailed("HP_ERROR:callback success error")
             return
         }
         let json = HurryPorterHelper.stringToDict(responseString)
+        self.responseJSON = json
         
         // if has hook for check response
         if let func_cr = checkResponse{

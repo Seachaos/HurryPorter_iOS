@@ -102,7 +102,7 @@ class ViewController: UIViewController {
                 NSLog("success:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, onFailed: {
-                (porter, raw) in
+                (porter, raw, status) in
                 NSLog("failed:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, href: "http://www.myandroid.tw/test/post.php");
@@ -125,7 +125,7 @@ class ViewController: UIViewController {
                 NSLog("success:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, onFailed: {
-                (porter, raw) in
+                (porter, raw, status) in
                 NSLog("failed:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, href: "http://www.myandroid.tw/test/post.php");
@@ -149,7 +149,7 @@ class ViewController: UIViewController {
                 NSLog("success:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, onFailed: {
-                (porter, raw) in
+                (porter, raw, status) in
                 NSLog("failed:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, href: "http://www.myandroid.tw/test/post.php");
@@ -173,7 +173,7 @@ class ViewController: UIViewController {
                 NSLog("success:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, onFailed: {
-                (porter, raw) in
+                (porter, raw, status) in
                 NSLog("failed:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, href: "http://www.myandroid.tw/test/post.php");

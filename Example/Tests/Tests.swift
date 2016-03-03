@@ -59,10 +59,39 @@ class TableOfContentsSpec: QuickSpec {
                     expect(dictStr) == HurryPorter.dictToString(postDict)
                     expect(dictStr) != "empty string"
                 }, onFailed: {
-                    (porter, raw) -> () in
+                    (porter, raw, status) -> () in
                     NSLog("failed:%@", raw)
                     fail(raw)
                 }, href: "http://www.myandroid.tw/test/post.php")
+            }
+            
+            it("should get error code"){
+                class testResp : HurryPorterHookDelegateCheckResponse{
+                    private func verifyData(porter: HurryPorter, json: [String : AnyObject]?, raw: String) -> Bool {
+                        return false
+                    }
+                    private func errorMessage(porter: HurryPorter, json: [String : AnyObject]?, raw: String) -> String? {
+                        porter.errorCode = 102486
+                        return "just error"
+                    }
+                }
+                let postDict = [
+                    "name":"Hurry",
+                    "value":"Porter"
+                ]
+                let porter = HurryPorter()
+                porter.makeRequestForTest({
+                    (porter)->[String:AnyObject] in
+                    porter.prepareData = nil
+                    porter.checkResponse = testResp()
+                    return postDict
+                    }, onSuccess: {
+                        (porter, json, raw)->() in
+                        fail(raw)
+                    }, onFailed: {
+                        (porter, raw, status) -> () in
+                        expect(status) == 102486
+                    }, href: "http://www.myandroid.tw/test/post.php")
             }
         }
         
