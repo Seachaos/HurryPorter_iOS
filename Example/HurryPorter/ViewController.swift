@@ -45,6 +45,7 @@ class ViewController: UIViewController {
     
     let checker = HookTestCheckResponse()
     let prepare = HookTestPrepare()
+    let uobjc = UsingInOBJC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,13 +63,12 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        let uobjc = UsingInOBJC()
-        
         self.view.backgroundColor = UIColor.grayColor()
         appendButton("[Test Request]", action:"doRequestTest", y:50)
         appendButton("[Test HOOK]", action:"doRequestHookTest", y:120)
         appendButton("[HOOK and Prepare]", action:"doRequestHookAndPrepareTest", y:190)
         appendButton("[Test Request RM HOOK]", action:"doRequestRemoveHookTest", y:260)
+        appendButton("[Test Request OBJC]", action:"doRequestTestOBJ", y:330)
         
         
     }
@@ -80,6 +80,10 @@ class ViewController: UIViewController {
         btn.addTarget(self, action: Selector(action), forControlEvents: UIControlEvents.TouchUpInside)
         btn.backgroundColor = UIColor.whiteColor()
         btn.frame = CGRectMake(50, y, 200, 50)
+        
+        if(NSString(string: name).length>20){
+            btn.titleLabel?.font = UIFont.systemFontOfSize(UIFont.smallSystemFontSize())
+        }
         
         self.view.addSubview(btn)
     }
@@ -177,6 +181,10 @@ class ViewController: UIViewController {
                 NSLog("failed:" + raw)
                 dialog.dismissWithClickedButtonIndex(0, animated: true)
             }, href: "http://www.myandroid.tw/test/post.php");
+    }
+    
+    func doRequestTestOBJ(){
+        uobjc.testHurryPorter()
     }
     
 }

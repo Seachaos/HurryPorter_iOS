@@ -11,4 +11,6 @@
 
 @interface UsingInOBJC : NSObject
 
+
+- (void) testHurryPorter;
 @end
