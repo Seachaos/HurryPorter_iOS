@@ -1,6 +1,6 @@
 {
   "name": "HurryPorter",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "summary": "A simple and easy use networking library",
   "description": "A simple and easy use networking library for Android / iOS , It's cross platform :D",
   "homepage": "http://seachaos.github.io/HurryPorter_iOS/",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/Seachaos/HurryPorter_iOS.git",
-    "tag": "0.1.5"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "8.0"
