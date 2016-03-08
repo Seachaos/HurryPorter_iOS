@@ -160,7 +160,9 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
         guard let cb = callback_failed else{
             return
         }
-        cb(porter: self, raw: msg, status: self.errorCode);
+        NSOperationQueue.mainQueue().addOperationWithBlock({
+            cb(porter: self, raw: msg, status: self.errorCode);
+        })
         busy = false
     }
     
@@ -190,7 +192,9 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
             }
         }else{
             // normal success
-            cb(porter: self, json: json, raw: responseString)
+            NSOperationQueue.mainQueue().addOperationWithBlock({
+                cb(porter: self, json: json, raw: self.responseString)
+            })
         }
         busy = false
     }
