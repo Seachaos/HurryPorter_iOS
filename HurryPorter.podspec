@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HurryPorter"
-  s.version          = "0.1.4"
+  s.version          = "0.1.5"
   s.summary          = "A simple and easy use networking library"
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 A simple and easy use networking library for Android / iOS , It's cross platform :D
                        DESC
 
-  s.homepage         = "https://github.com/Seachaos/HurryPorter_iOS"
+  s.homepage         = "http://seachaos.github.io/HurryPorter_iOS/"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Seachaos" => "ye.jian.yin@gmail.com" }

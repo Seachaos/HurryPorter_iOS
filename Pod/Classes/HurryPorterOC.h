@@ -11,5 +11,6 @@
 @interface HurryPorterOC : NSObject
 
 + (NSString*)MD5:(NSString*)value;
++ (NSString*)SHA256:(NSString*)str;
 
 @end

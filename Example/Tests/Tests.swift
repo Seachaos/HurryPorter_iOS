@@ -102,6 +102,12 @@ class TableOfContentsSpec: QuickSpec {
                 expect(expect_md5) == md5
                 expect(expect_md5) != "testaaaa"
             }
+            it("sha256 test"){
+                let expect_sha256 = "40671176f20c8e7a118fc756205017d04ec58b8b5e9ce6a81640807ea7c78085"
+                let sha256 = HurryPorterOC.SHA256("a123bcd")
+                expect(expect_sha256) == sha256
+                expect(sha256) != "a123bcd"
+            }
         }
     }
 }
