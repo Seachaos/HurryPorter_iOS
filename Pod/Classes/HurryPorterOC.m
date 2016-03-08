@@ -34,7 +34,7 @@
     NSData *dataIn = [str dataUsingEncoding:NSASCIIStringEncoding];
     unsigned char shaBuffer[CC_SHA256_DIGEST_LENGTH];
     
-    CC_SHA256(dataIn.bytes, dataIn.length,  shaBuffer);
+    CC_SHA256(dataIn.bytes, (CC_LONG)dataIn.length,  shaBuffer);
     NSMutableString *output = [[NSMutableString alloc] init];
     for(int i=0; i<CC_SHA256_DIGEST_LENGTH;i++){
         [output appendFormat:@"%02x", shaBuffer[i]];
