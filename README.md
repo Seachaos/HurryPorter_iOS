@@ -11,7 +11,47 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 or see example page:  http://seachaos.github.io/HurryPorter_iOS
 
-## Requirements
+### Simple Code
+
+
+In Swift：
+
+	let porter = HurryPorter()
+	porter.makeRequest( {
+		(porter)->[String:AnyObject] in
+		var dict = [String:AnyObject]()
+		dict["name"] = "Hurry"
+		dict["value"] = "Porter"
+		return dict
+	}, onSuccess: {
+		(porter, json, raw) in
+		NSLog("success:" + raw)
+	}, onFailed: {
+		(porter, raw, status) in
+		NSLog("failed:" + raw)
+	}, href: "http://www.myandroid.tw/test/post.php");
+
+
+In Objective-C：
+
+
+    NSString *url = @"http://www.myandroid.tw/test/post.php";
+    HurryPorter *porter = [HurryPorter new];
+    [porter makeRequest:^NSDictionary*(HurryPorter *porter){
+        NSMutableDictionary *dict = [NSMutableDictionary new];
+        dict[@"First Name"] = @"Hurry";
+        dict[@"Last Name"] = @"Porter";
+        return dict;
+    } onSuccess:^void(HurryPorter *porter, NSDictionary *json, NSString *raw){
+        NSLog(@"objc success:%@", raw);
+    } onFailed :^void(HurryPorter *porter, NSString *raw, NSInteger errorCode){
+        NSLog(@"objc failed:%@", raw);        
+    } href: url];
+
+
+More detail on ： http://seachaos.github.io/HurryPorter_iOS
+
+
 
 ## Installation
 
