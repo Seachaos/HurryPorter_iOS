@@ -28,59 +28,45 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to HurryPorter iOS.</h3>
+          <a href="./index.html">&lt;&lt;Back to Home</a>
+          <h3>Aboue Hook function </h3>
+          <p>
+              if you want use hook, need to implement HurryPorterHookDelegate.<br />
+              below is some exmaple.<br />
+          </p>
 
-<p>
-  API ：
-  <a href="./api_hook.html">Hook</a>
-</p>
-
-<h3>
-<a id="simple-code" class="anchor" href="#simple-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simple Code</h3>
-
-<p>In Swift：</p>
-
-<pre><code>let porter = HurryPorter()
-porter.makeRequest( {
-    (porter)-&gt;[String:AnyObject] in
-    var dict = [String:AnyObject]()
-    dict["name"] = "Hurry"
-    dict["value"] = "Porter"
-    return dict
-}, onSuccess: {
-    (porter, json, raw) in
-    NSLog("success:" + raw)
-}, onFailed: {
-    (porter, raw, status) in
-    NSLog("failed:" + raw)
-}, href: "http://www.myandroid.tw/test/post.php");
+          <h3>Hook for CheckResponse</h3>
+          <p>
+            This delegate call when get server response data. (if connection is success and no server error)<br />
+            return true or false decide HurryPorter callback onSuccess or onFailed.
+          </p>
+<pre><code>class HookTestCheckResponse : HurryPorterHookDelegateCheckResponse{
+    func verifyData(porter: HurryPorter, json: [String : AnyObject]?, raw: String) -> Bool {
+        NSLog("on hook.verifyData:" + raw)
+        guard let dict = json else{
+            return false
+        }
+        if let status = dict["status"] as? NSNumber{
+            let code = status.integerValue
+            if code == 1000 {
+                return true
+            }
+        }
+        if let status = dict["status"] as? String{
+            if status == "1000"{
+                return true
+            }
+        }
+        return false
+    }
+    
+    func errorMessage(porter: HurryPorter, json: [String : AnyObject]?, raw: String) -> String? {
+        return "Just Error"
+    }
+}
 </code></pre>
 
-<p>In Objective-C：</p>
 
-<pre><code>NSString *url = @"http://www.myandroid.tw/test/post.php";
-HurryPorter *porter = [HurryPorter new];
-[porter makeRequest:^NSDictionary*(HurryPorter *porter){
-    NSMutableDictionary *dict = [NSMutableDictionary new];
-    dict[@"First Name"] = @"Hurry";
-    dict[@"Last Name"] = @"Porter";
-    return dict;
-} onSuccess:^void(HurryPorter *porter, NSDictionary *json, NSString *raw){
-    NSLog(@"objc success:%@", raw);
-} onFailed :^void(HurryPorter *porter, NSString *raw, NSInteger errorCode){
-    NSLog(@"objc failed:%@", raw);        
-} href: url];
-</code></pre>
-
-<h3>
-<a id="hurryporteroc" class="anchor" href="#hurryporteroc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HurryPorterOC</h3>
-
-<p>HurryPorterOC support some method like：</p>
-
-<pre><code>HurryPorterOC.SHA256("text")
-HurryPorterOC.MD5("text")
-</code></pre>
         </section>
 
         <aside id="sidebar">
