@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: HurryPorter
+email: ye.jian.yin@gmail.com
+description: > # A simple and easy use networking library
+for Android / iOS , It's cross platform :D
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://seachaos.github.io/HurryPorter_iOS/" # the base hostname & protocol for your site
+twitter_username: JianYin
+github_username:  seachaos
+
+# Build settings
+markdown: kramdown
