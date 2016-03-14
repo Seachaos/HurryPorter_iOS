@@ -6,6 +6,8 @@ public class HurryPorterHelper : NSObject{
     public static let osVersion = (UIDevice.currentDevice().systemVersion as NSString).floatValue
     public static var encoding = NSUTF8StringEncoding
     
+    public var useSession = false
+    
     public class func dictToString(obj:AnyObject)->String?{
         guard let _ = obj as? [String:AnyObject] else{
             guard let _ = obj as? [AnyObject] else{
@@ -114,7 +116,26 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
                 _preparePost(request, dict:dict)
         }
         
-        let session = NSURLSession.sharedSession()
+        var session = NSURLSession.sharedSession()
+        
+        if ( useSession == false ) {
+            let configure = NSURLSessionConfiguration.defaultSessionConfiguration()
+            configure.allowsCellularAccess = false
+            configure.timeoutIntervalForRequest = NSNumber(integer: self.timeout).doubleValue
+            configure.timeoutIntervalForResource = NSNumber(integer: self.timeout * 2).doubleValue
+            configure.HTTPMaximumConnectionsPerHost = 1
+            configure.requestCachePolicy = NSURLRequestCachePolicy.ReloadIgnoringLocalAndRemoteCacheData
+            
+            // delete cookie
+            let cookieStorage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
+            if let cookies = cookieStorage.cookies{
+                for cookie in cookies {
+                    NSHTTPCookieStorage.sharedHTTPCookieStorage().deleteCookie(cookie)
+                }
+            }
+            
+            session = NSURLSession(configuration: configure)
+        }
         let sessionDataTask = session.dataTaskWithRequest(request, completionHandler: {
             (odata, req, error) in
             if let e = error{
