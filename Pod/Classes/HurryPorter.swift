@@ -120,7 +120,7 @@ public class HurryPorter : HurryPorterHelper, NSURLConnectionDataDelegate{
         
         if ( useSession == false ) {
             let configure = NSURLSessionConfiguration.defaultSessionConfiguration()
-            configure.allowsCellularAccess = false
+            configure.allowsCellularAccess = true
             configure.timeoutIntervalForRequest = NSNumber(integer: self.timeout).doubleValue
             configure.timeoutIntervalForResource = NSNumber(integer: self.timeout * 2).doubleValue
             configure.HTTPMaximumConnectionsPerHost = 1
